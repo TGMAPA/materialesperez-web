@@ -3,866 +3,742 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materiales Pérez | Catálogo y Cotización Directa en Toluca</title>
-    <meta name="description" content="Catálogo completo de materiales de construcción en Toluca, Metepec, Lerma y Zinacantepec. Cotiza en línea cemento, varilla, agregados, block y recibe tu presupuesto directo por WhatsApp.">
-    <meta name="keywords" content="materiales de construccion toluca, cotizar cemento toluca, varilla 3/8 metepec, arena azul lerma, block zinacantepec, ferreteria san mateo atenco, materiales perez">
+    <title>Materiales Pérez | Venta y Suministro de Materiales para Construcción en Toluca</title>
+    
+    <!-- SEO Local y Meta Etiquetas -->
+    <meta name="description" content="Venta y suministro de materiales para construcción y ferretería en Toluca. Cemento, varilla, tabique, tubería PVC, tinacos y herramientas. Cotiza en línea por WhatsApp. San Buenaventura, Toluca.">
+    <meta name="keywords" content="materiales para construccion toluca, ferreteria toluca, cemento toluca, varilla toluca, tabique san buenaventura, tinacos toluca, cotizacion materiales toluca, materiales perez">
     <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="MX-MEX">
+    <meta name="geo.placename" content="Toluca de Lerdo">
+    <meta name="geo.position" content="19.2685;-99.6682">
+    <meta name="ICBM" content="19.2685, -99.6682">
 
-    <!-- Tailwind CSS CDN -->
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Materiales Pérez | Soluciones para Construcción y Ferretería">
+    <meta property="og:description" content="Suministro de materiales de construcción y ferretería en Toluca y zonas conurbadas. Atención personalizada y cotizaciones rápidas por WhatsApp.">
+    <meta property="og:locale" content="es_MX">
+
+    <!-- Tailwind CSS desde CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Configuración de Colores Oficiales basados en el Logo -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         brand: {
-                            navy: '#0F253B',        /* Deep Navy Blue from logo */
-                            'navy-dark': '#0B1928',   /* Midnight Dark Navy */
-                            'navy-light': '#1A3854',  /* Accent Navy hover */
-                            grey: '#6E8294',        /* Slate Steel Grey from logo */
-                            'grey-light': '#8AA0B4',  /* Light Steel Accent */
-                            'grey-dark': '#475868',   /* Darker Steel */
-                            bg: '#F4F7FA',          /* Ice White background */
-                            card: '#FFFFFF',
-                            border: '#E2E8F0',
-                            text: '#0B1928',
-                            body: '#334155'
+                            navy: '#0F253B',      /* Azul Marino Oscuro del Logo */
+                            steel: '#6E8294',     /* Gris Acero del Logo */
+                            lightsteel: '#8AA0B4',/* Gris Claro de Acento */
+                            dark: '#0B1928',      /* Fondo Súper Oscuro */
+                            bglight: '#F4F7FA',   /* Fondo Gris Claro para Secciones */
+                            accent: '#1D4ED8'     /* Azul Acento Interactivo */
                         }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
                     }
                 }
             }
         }
     </script>
 
-    <!-- FontAwesome Icons CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- Schema.org Structured Data for Local Business -->
+    <!-- Datos Estructurados Schema.org para Google (SEO Local) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "BuildingMaterialsStore",
+      "@type": "HardwareStore",
       "name": "Materiales Pérez",
-      "image": "https://materialesperez.com.mx/logo.png",
-      "telePhone": "+527221234567",
-      "email": "contacto@materialesperez.com.mx",
+      "image": "logo.png",
+      "@id": "https://materialesperez.pages.dev",
+      "url": "https://materialesperez.pages.dev",
+      "telephone": "+527222740023",
+      "email": "materialesperezsadecv@hotmail.com",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Av. Solidaridad Las Torres #104",
-        "addressLocality": "Toluca",
-        "addressRegion": "Estado de México",
-        "postalCode": "50160",
+        "streetAddress": "Profesora María del Refugio Alejandre Tarello 109, Delegación San Buenaventura",
+        "addressLocality": "Toluca de Lerdo",
+        "addressRegion": "Méx.",
+        "postalCode": "50110",
         "addressCountry": "MX"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 19.2826,
-        "longitude": -99.6557
+        "latitude": 19.269133,
+        "longitude": -99.687961
       },
-      "url": "https://materialesperez.com.mx",
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "07:00",
-          "closes": "18:00"
+          "opens": "08:00",
+          "closes": "15:00"
         },
         {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": "Saturday",
-          "opens": "07:00",
-          "closes": "14:00"
+          "opens": "08:00",
+          "closes": "13:00"
         }
       ],
       "areaServed": [
-        "Toluca", "Metepec", "Lerma", "Zinacantepec", "San Mateo Atenco", "Almoloya de Juárez"
-      ],
-      "priceRange": "$$"
+        "Toluca",
+        "Metepec",
+        "Zinacantepec",
+        "San Mateo Atenco",
+        "Lerma",
+        "Almoloya de Juárez"
+      ]
     }
     </script>
 
     <style>
         .custom-scrollbar::-webkit-scrollbar {
             width: 6px;
-            height: 6px;
         }
         .custom-scrollbar::-webkit-scrollbar-track {
-            background: #F4F7FA;
+            background: #f1f1f1;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb {
             background: #6E8294;
-            border-radius: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: #0F253B;
-        }
-        @keyframes toastIn {
-            from { transform: translateY(100%); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        .animate-toast {
-            animation: toastIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            border-radius: 3px;
         }
     </style>
 </head>
-<body class="bg-brand-bg text-brand-body font-sans antialiased selection:bg-brand-grey-light selection:text-brand-navy pb-20 lg:pb-0">
+<body class="bg-brand-bglight text-slate-800 font-sans antialiased flex flex-col min-h-screen">
 
-    <!-- Top Announcement Bar -->
-    <div class="bg-brand-navy text-white text-xs py-2 px-4 border-b border-brand-navy-light/40">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-            <div class="flex items-center gap-4 flex-wrap justify-center md:justify-start">
-                <span><i class="fa-solid fa-truck-fast text-brand-grey-light mr-1"></i> Envíos en Toluca, Metepec, Zinacantepec, Lerma y San Mateo Atenco</span>
-                <span class="hidden sm:inline text-brand-grey">•</span>
-                <span class="hidden sm:inline"><i class="fa-solid fa-clock text-brand-grey-light mr-1"></i> Entregas el mismo día en pedidos antes de las 12:00 PM</span>
+    <!-- Notificación Toast Personalizada (Sin usar alert) -->
+    <div id="toast" class="fixed top-20 right-5 z-50 transform translate-x-full transition-transform duration-300 ease-in-out bg-brand-navy text-white px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3 border border-brand-steel/30 pointer-events-none">
+        <i data-lucide="check-circle-2" class="text-emerald-400 w-5 h-5"></i>
+        <span id="toast-message" class="text-sm font-medium">Producto actualizado</span>
+    </div>
+
+    <!-- Encabezado Superior de Contacto Rápido -->
+    <div class="bg-brand-dark text-slate-300 text-xs py-2 px-4 border-b border-brand-steel/20">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap">
+                <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-lightsteel"></i> San Buenaventura, Toluca, Méx.</span>
+                <a href="tel:+527222740023" class="flex items-center gap-1.5 hover:text-white transition"><i data-lucide="phone" class="w-3.5 h-3.5 text-brand-lightsteel"></i> +52 (722) 274 0023</a>
+                <a href="mailto:materialesperezsadecv@hotmail.com" class="hidden md:flex items-center gap-1.5 hover:text-white transition"><i data-lucide="mail" class="w-3.5 h-3.5 text-brand-lightsteel"></i> materialesperezsadecv@hotmail.com</a>
             </div>
-            <div class="flex items-center gap-4">
-                <a href="tel:7221234567" class="hover:text-brand-grey-light transition-colors"><i class="fa-solid fa-phone mr-1"></i> (722) 123-4567</a>
-                <a href="https://wa.me/527221234567?text=Hola%20Materiales%20P%C3%A9rez,%20quisiera%20pedir%20informaci%C3%B3n" target="_blank" rel="noopener noreferrer" class="hover:text-green-400 font-semibold transition-colors flex items-center gap-1">
-                    <i class="fa-brands fa-whatsapp text-green-400"></i> WhatsApp
-                </a>
+            <div class="flex items-center gap-3 font-medium text-white">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Atención y Entregas HOY en Toluca</span>
             </div>
         </div>
     </div>
 
-    <!-- Main Header / Navigation -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-brand-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+    <!-- Navegación Principal -->
+    <header class="sticky top-0 z-40 bg-brand-navy/95 backdrop-blur-md text-white shadow-lg border-b border-brand-steel/30">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
             
-            <!-- Logo matching extracted palette -->
+            <!-- CONTENEDOR DEL LOGO (Soporta Imagen propia con respaldo SVG) -->
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-12 h-12 rounded-xl bg-brand-bg border border-brand-border flex items-center justify-center p-1.5 shadow-sm group-hover:border-brand-grey transition-all">
-                    <svg viewBox="0 0 100 100" class="w-full h-full text-brand-navy" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M50 10 L80 28 L80 62 L50 80 L20 62 L20 28 Z" stroke="#0F253B" stroke-width="6" stroke-linejoin="round"/>
-                        <path d="M30 62 L30 38 L42 48 L42 62" stroke="#0F253B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M58 62 L58 38 L70 38 L70 50 L58 50" stroke="#0F253B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M50 10 L50 80" stroke="#6E8294" stroke-width="4" stroke-linecap="round"/>
-                        <path d="M20 28 L50 46 L80 28" stroke="#8AA0B4" stroke-width="3"/>
-                    </svg>
-                </div>
-                <div>
-                    <span class="block text-xl font-black tracking-wider text-brand-navy leading-none">MATERIALES</span>
-                    <span class="block text-xs font-bold text-brand-grey tracking-widest leading-tight">PÉREZ</span>
+                <!-- 
+                  INSTRUCCIÓN: Para usar tu propio logo en imagen:
+                  1. Coloca tu archivo de logo (ej. "logo.png") en la misma carpeta que este archivo index.html.
+                  2. El atributo onerror cargará automáticamente el diseño SVG si la imagen no se encuentra.
+                -->
+                <img src="logo.png" alt="Materiales Pérez Logo" class="h-11 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';">
+                
+                <!-- Logo Vectorial Fallback de Respaldo -->
+                <div id="fallback-logo" class="flex items-center gap-3" style="display: none;">
+                    <div class="w-10 h-10 rounded-lg bg-brand-steel/20 border border-brand-steel/40 flex items-center justify-center p-1.5 group-hover:border-brand-lightsteel transition">
+                        <svg viewBox="0 0 100 100" class="w-full h-full fill-none stroke-current text-brand-lightsteel" stroke-width="8">
+                            <path d="M 20 80 L 20 40 L 50 20 L 80 40 L 80 80 Z" />
+                            <path d="M 35 80 L 35 50 L 65 50 L 65 80" />
+                            <path d="M 50 20 L 50 80" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-extrabold text-lg tracking-tight leading-none text-white">MATERIALES</span>
+                        <span class="font-bold text-sm tracking-widest text-brand-lightsteel leading-none mt-1">PÉREZ</span>
+                    </div>
                 </div>
             </a>
 
-            <!-- Navigation Links -->
-            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-brand-body">
-                <a href="#inicio" class="hover:text-brand-navy transition-colors font-semibold text-brand-navy">Inicio</a>
-                <a href="#catalogo" class="hover:text-brand-navy transition-colors">Catálogo de Materiales</a>
-                <a href="#cotizacion" class="hover:text-brand-navy transition-colors">Mi Cotización</a>
-                <a href="#zonas" class="hover:text-brand-navy transition-colors">Cobertura en Toluca</a>
-                <a href="#faq" class="hover:text-brand-navy transition-colors">Preguntas Frecuentes</a>
+            <!-- Menú de Navegación -->
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="#catalogo" class="hover:text-brand-lightsteel transition">Catálogo de Materiales</a>
+                <a href="#cotizador" class="hover:text-brand-lightsteel transition">Mi Cotización</a>
+                <a href="#nosotros" class="hover:text-brand-lightsteel transition">Nosotros</a>
+                <a href="#ubicacion" class="hover:text-brand-lightsteel transition">Ubicación</a>
             </nav>
 
-            <!-- Quick Action Button to Cart -->
+            <!-- Acceso Directo WhatsApp -->
             <div class="flex items-center gap-3">
-                <a href="#cotizacion" class="relative inline-flex items-center gap-2.5 bg-brand-navy text-white px-4 py-2.5 rounded-xl text-sm font-bold hover:bg-brand-navy-dark transition-all shadow-md group">
-                    <i class="fa-solid fa-receipt text-brand-grey-light group-hover:scale-110 transition-transform"></i>
-                    <span>Ver Cotización</span>
-                    <span id="nav-cart-badge" class="bg-brand-grey-light text-brand-navy text-xs font-black rounded-full px-2 py-0.5">0</span>
+                <a href="https://wa.me/5217228436063?text=Hola,%20busco%20informaci%C3%B3n%20sobre%20materiales%20de%20construcci%C3%B3n" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-2 shadow-md transition transform hover:-translate-y-0.5">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    <span>WhatsApp Directo</span>
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="relative bg-brand-navy text-white overflow-hidden py-14 lg:py-20">
-        <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#8AA0B4 1px, transparent 1px); background-size: 24px 24px;"></div>
+    <!-- Hero Section con Opción de Imagen de Fondo -->
+    <section class="relative bg-brand-navy text-white overflow-hidden py-16 lg:py-24 border-b border-brand-steel/30">
         
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-12 gap-8 items-center">
+        <!-- OPALINA DE FONDO / FOTO DE TU NEGOCIO (Opcional) -->
+        <div class="absolute inset-0 opacity-15 bg-cover bg-center pointer-events-none" style="background-image: url('foto-tienda.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-navy/95 to-brand-navy/80"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-steel/20 border border-brand-steel/40 text-brand-lightsteel text-xs font-semibold uppercase tracking-wider">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i> Proveedor Confiable en Toluca
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-tight">
+                    Suministro Completo de <span class="text-brand-lightsteel">Materiales y Ferretería</span> en Toluca
+                </h1>
+                <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+                    Ofrecemos venta de cemento, acero, agregados, tubería PVC, tinacos y herramientas con entregas directas en obra. Cotiza tus productos en línea de manera sencilla.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#catalogo" class="bg-brand-lightsteel hover:bg-white text-brand-navy font-bold px-6 py-3.5 rounded-xl shadow-lg transition flex items-center gap-2 text-sm">
+                        <i data-lucide="shopping-bag" class="w-4 h-4"></i> Ver Catálogo y Cotizar
+                    </a>
+                    <a href="tel:+527222740023" class="bg-brand-steel/20 hover:bg-brand-steel/30 text-white font-semibold px-6 py-3.5 rounded-xl border border-brand-steel/40 transition flex items-center gap-2 text-sm">
+                        <i data-lucide="phone-call" class="w-4 h-4 text-brand-lightsteel"></i> Llama al 722 274 0023
+                    </a>
+                </div>
                 
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 bg-brand-navy-light/80 border border-brand-grey/40 text-brand-grey-light px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
-                        <i class="fa-solid fa-shield-halved"></i> Distribuidor Directo en Toluca y Zona Metropolitana
+                <!-- Mini Indicadores -->
+                <div class="grid grid-cols-3 gap-4 pt-6 border-t border-brand-steel/20 text-xs sm:text-sm">
+                    <div>
+                        <p class="font-bold text-white text-base">San Buenaventura</p>
+                        <p class="text-slate-400">Ubicación Central</p>
                     </div>
-                    
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white">
-                        Suministro de Materiales de Construcción <span class="text-brand-grey-light">Rápido, Seguro y Directo</span>
-                    </h1>
-                    
-                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                        Explora nuestro catálogo, selecciona los materiales que necesitas para tu proyecto y recibe tu cotización formal al instante por WhatsApp con flete incluido a tu obra.
-                    </p>
-
-                    <!-- Interactive Quick Hero CTA -->
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-                        <a href="#catalogo" class="w-full sm:w-auto bg-brand-grey text-brand-navy font-bold px-7 py-3.5 rounded-xl hover:bg-brand-grey-light transition-all shadow-lg flex items-center justify-center gap-2 text-sm">
-                            <i class="fa-solid fa-boxes-stacked"></i>
-                            Explorar Catálogo de Materiales
-                        </a>
-                        <a href="https://wa.me/527221234567?text=Hola%20Materiales%20P%C3%A9rez,%20necesito%20atenci%C3%B3n%20personalizada%20para%20un%20proyecto" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-green-600 text-white font-bold px-7 py-3.5 rounded-xl hover:bg-green-500 transition-all shadow-md flex items-center justify-center gap-2 text-sm">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            Atención Directa WhatsApp
-                        </a>
+                    <div>
+                        <p class="font-bold text-white text-base">Flete Directo</p>
+                        <p class="text-slate-400">Toluca y Alrededores</p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-white text-base">Atención Personal</p>
+                        <p class="text-slate-400">Cotización Inmediata</p>
                     </div>
                 </div>
+            </div>
 
-                <!-- Right Feature Cards -->
-                <div class="lg:col-span-5 flex justify-center">
-                    <div class="bg-brand-navy-light/50 border border-brand-grey/30 p-6 rounded-2xl shadow-xl backdrop-blur-md w-full max-w-md">
-                        <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2 border-b border-brand-grey/30 pb-3">
-                            <i class="fa-solid fa-truck-ramp-box text-brand-grey-light"></i> Ventajas de Cotizar con Nosotros
+            <!-- Tarjeta Informativa Lateral -->
+            <div class="md:col-span-5">
+                <div class="bg-white/5 border border-brand-steel/30 backdrop-blur-md rounded-2xl p-6 shadow-2xl text-slate-100 space-y-4">
+                    <div class="flex items-center justify-between border-b border-brand-steel/30 pb-4">
+                        <h3 class="font-bold text-lg text-white flex items-center gap-2">
+                            <i data-lucide="clock" class="text-brand-lightsteel w-5 h-5"></i> Horarios de Atención
                         </h3>
-                        <ul class="space-y-3 text-xs text-slate-200">
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-check text-green-400 mt-0.5"></i>
-                                <span><strong>Sin Cuentas ni Registros:</strong> Agregas tus productos y envías la lista por WhatsApp en 1 clic.</span>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-check text-green-400 mt-0.5"></i>
-                                <span><strong>Precios de Mayoreo y Menudeo:</strong> Ajustes especiales para constructoras y particulares.</span>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-check text-green-400 mt-0.5"></i>
-                                <span><strong>Respuesta en < 10 Minutos:</strong> Nuestro equipo valida inventario y costos de flete inmediato.</span>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-check text-green-400 mt-0.5"></i>
-                                <span><strong>Carga y Descarga Garantizada:</strong> Camiones de 3m³, 6m³ y 14m³ a pie de obra.</span>
-                            </li>
-                        </ul>
+                        <span class="text-xs bg-emerald-500/20 text-emerald-300 font-bold px-2.5 py-1 rounded-full border border-emerald-500/30">Abierto</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex justify-between"><span>Lunes a Viernes:</span> <span class="font-medium text-white">8:00 AM - 6:00 PM</span></li>
+                        <li class="flex justify-between"><span>Sábados:</span> <span class="font-medium text-white">8:00 AM - 2:00 PM</span></li>
+                        <li class="flex justify-between"><span>Domingos:</span> <span class="font-medium text-slate-400">Cerrado</span></li>
+                    </ul>
+                    <div class="pt-2">
+                        <p class="text-xs text-slate-400 mb-2">¿Necesitas materiales urgentes en tu obra?</p>
+                        <a href="https://wa.me/5217228436063?text=Hola,%20tengo%20una%20urgencia%20de%20materiales" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 rounded-lg text-center flex items-center justify-center gap-2 text-sm transition">
+                            <i data-lucide="message-square" class="w-4 h-4"></i> Enviar Mensaje por WhatsApp
+                        </a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- How It Works Steps -->
-    <section class="py-8 bg-white border-b border-brand-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                
-                <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-bg border border-brand-border">
-                    <div class="w-12 h-12 rounded-xl bg-brand-navy text-white font-extrabold text-lg flex items-center justify-center shrink-0">
-                        1
-                    </div>
-                    <div class="text-left">
-                        <h4 class="font-bold text-brand-navy text-sm">Explora y Selecciona</h4>
-                        <p class="text-xs text-brand-body">Usa los botones <strong>+ / -</strong> en el catálogo para elegir tus materiales.</p>
-                    </div>
-                </div>
+    <!-- SECCIÓN UNIFICADA: Catálogo con Selección para Cotización -->
+    <section id="catalogo" class="py-16 max-w-7xl mx-auto px-4 flex-grow">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+            <div>
+                <span class="text-brand-steel font-bold text-xs uppercase tracking-widest">Catálogo Interactivo</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-brand-navy mt-1">Selecciona los Materiales para tu Cotización</h2>
+                <p class="text-slate-600 text-sm mt-1">Agrega las cantidades que requieres y da clic en "Generar Cotización" para enviar tu lista directamente por WhatsApp.</p>
+            </div>
 
-                <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-bg border border-brand-border">
-                    <div class="w-12 h-12 rounded-xl bg-brand-navy text-white font-extrabold text-lg flex items-center justify-center shrink-0">
-                        2
-                    </div>
-                    <div class="text-left">
-                        <h4 class="font-bold text-brand-navy text-sm">Indica tu Municipio</h4>
-                        <p class="text-xs text-brand-body">Selecciona la zona de entrega en Toluca o municipios vecinos.</p>
-                    </div>
-                </div>
-
-                <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-bg border border-brand-border">
-                    <div class="w-12 h-12 rounded-xl bg-brand-navy text-white font-extrabold text-lg flex items-center justify-center shrink-0">
-                        3
-                    </div>
-                    <div class="text-left">
-                        <h4 class="font-bold text-brand-navy text-sm">Recibe tu Presupuesto</h4>
-                        <p class="text-xs text-brand-body">Envía el desglose a WhatsApp y recibe cotización con flete incluido.</p>
-                    </div>
-                </div>
-
+            <!-- Filtros de Categorías -->
+            <div class="flex items-center gap-2 overflow-x-auto pb-2 custom-scrollbar" id="category-filters">
+                <button onclick="filterCategory('todos')" class="cat-btn active bg-brand-navy text-white px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap shadow-sm transition">Todos</button>
+                <button onclick="filterCategory('obra-gris')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">Obra Gris</button>
+                <button onclick="filterCategory('acero')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">Acero y Malla</button>
+                <button onclick="filterCategory('plomeria')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">Plomería y PVC</button>
+                <button onclick="filterCategory('ferreteria')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">Ferretería y Más</button>
             </div>
         </div>
-    </section>
 
-    <!-- UNIFIED CATALOG SECTION -->
-    <section id="catalogo" class="py-12 bg-brand-bg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <!-- Section Header -->
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
-                <div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-brand-grey bg-white px-3 py-1 rounded-full border border-brand-border">
-                        Catálogo Interactivo
-                    </span>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy mt-2">
-                        Materiales de Construcción & Ferretería
-                    </h2>
-                    <p class="text-brand-body text-xs sm:text-sm mt-1">
-                        Haz clic en <strong>"Agregar a Cotización"</strong> o ajusta las cantidades directamente en cada producto.
-                    </p>
-                </div>
-
-                <!-- Search Input Bar -->
-                <div class="relative w-full md:w-80">
-                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-brand-grey"></i>
-                    <input type="text" id="catalog-search" oninput="filterCatalog()" placeholder="Buscar producto (ej. Cemento, Varilla, Arena)..." class="w-full bg-white border border-brand-border rounded-xl pl-10 pr-4 py-2.5 text-sm text-brand-navy placeholder-brand-grey focus:outline-none focus:ring-2 focus:ring-brand-navy shadow-sm">
-                </div>
-            </div>
-
-            <!-- Filter Pills -->
-            <div class="flex items-center gap-2 overflow-x-auto pb-4 custom-scrollbar mb-6" id="category-pills">
-                <button onclick="setCategory('Todos')" class="category-btn active px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-brand-navy text-white shadow-sm transition-all">
-                    Todos los Productos
-                </button>
-                <button onclick="setCategory('Obra Negra')" class="category-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-white text-brand-body border border-brand-border hover:border-brand-grey transition-all">
-                    Obra Negra & Cemento
-                </button>
-                <button onclick="setCategory('Aceros')" class="category-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-white text-brand-body border border-brand-border hover:border-brand-grey transition-all">
-                    Aceros & Varilla
-                </button>
-                <button onclick="setCategory('Agregados')" class="category-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-white text-brand-body border border-brand-border hover:border-brand-grey transition-all">
-                    Agregados & Mina
-                </button>
-                <button onclick="setCategory('Mampostería')" class="category-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-white text-brand-body border border-brand-border hover:border-brand-grey transition-all">
-                    Block & Tabique
-                </button>
-                <button onclick="setCategory('Instalaciones')" class="category-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-white text-brand-body border border-brand-border hover:border-brand-grey transition-all">
-                    Tubería PVC & Plomería
-                </button>
-            </div>
-
-            <!-- Unified Product Cards Grid -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="catalog-grid">
-                <!-- Dynamically populated by JavaScript -->
-            </div>
-
+        <!-- Buscador Rápido -->
+        <div class="relative mb-8">
+            <i data-lucide="search" class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 w-5 h-5"></i>
+            <input type="text" id="search-input" onkeyup="searchProducts()" placeholder="Buscar por nombre (ej. Cemento, Varilla, Tinaco, PVC)..." class="w-full pl-12 pr-4 py-3 bg-white rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-navy shadow-sm text-sm">
         </div>
+
+        <!-- Grid de Productos -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="products-grid">
+            <!-- Los productos se generan mediante JavaScript con soporte de imagen personalizada opcional -->
+        </div>
+
     </section>
 
-    <!-- DEDICATED QUOTE FINALIZATION PANEL -->
-    <section id="cotizacion" class="py-12 bg-white border-t border-brand-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-brand-bg rounded-2xl border-2 border-brand-navy p-6 sm:p-8 shadow-xl relative">
-                    
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-brand-border">
-                        <div>
-                            <span class="text-xs font-bold uppercase tracking-wider text-brand-grey">Paso Final</span>
-                            <h2 class="text-2xl font-black text-brand-navy flex items-center gap-2">
-                                <i class="fa-solid fa-file-invoice-dollar text-brand-grey"></i>
-                                Revisa y Envía tu Cotización
-                            </h2>
-                        </div>
-                        <button onclick="clearCart()" class="inline-flex items-center gap-1.5 text-xs text-red-600 hover:text-red-800 font-bold bg-white px-3 py-1.5 rounded-lg border border-red-200 shadow-sm transition-colors">
-                            <i class="fa-solid fa-trash-can"></i> Vaciar Lista
-                        </button>
-                    </div>
-
-                    <!-- Quote Items Container -->
-                    <div class="my-6">
-                        <h3 class="text-xs font-bold text-brand-navy uppercase tracking-wider mb-3">
-                            1. Productos Seleccionados (<span id="quote-count-text">0</span>)
+    <!-- SECCIÓN RESUMEN DE COTIZACIÓN Y ENVÍO A WHATSAPP -->
+    <section id="cotizador" class="bg-slate-100 py-16 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+                <div class="bg-brand-navy p-6 text-white flex justify-between items-center flex-wrap gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold flex items-center gap-2">
+                            <i data-lucide="file-text" class="text-brand-lightsteel w-5 h-5"></i> Resumen de tu Cotización
                         </h3>
-                        <div id="quote-items-list" class="space-y-3 max-h-80 overflow-y-auto custom-scrollbar pr-2">
-                            <!-- Populated dynamically -->
-                        </div>
+                        <p class="text-xs text-slate-300 mt-1">Revisa tus productos y envía tu solicitud directo a nuestro WhatsApp.</p>
+                    </div>
+                    <button onclick="clearQuote()" class="text-xs text-slate-300 hover:text-rose-300 flex items-center gap-1 transition">
+                        <i data-lucide="trash-2" class="w-4 h-4"></i> Vaciar Lista
+                    </button>
+                </div>
+
+                <div class="p-6 space-y-6">
+                    <!-- Lista de Productos Seleccionados -->
+                    <div id="quote-items-container" class="space-y-3 min-h-[120px]">
+                        <!-- Se llena dinámicamente mediante JS -->
                     </div>
 
-                    <!-- Logistics & Delivery Form -->
-                    <div class="grid sm:grid-cols-2 gap-4 pt-4 border-t border-brand-border">
+                    <!-- Datos Adicionales de Entrega -->
+                    <div class="border-t border-slate-200 pt-6 grid md:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-1.5">
-                                2. Municipio de Entrega
-                            </label>
-                            <select id="quote-zone" class="w-full bg-white border border-brand-border rounded-xl px-3.5 py-2.5 text-sm font-semibold text-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-navy shadow-sm">
-                                <option value="Toluca (Centro / Sur / Norte)">Toluca (Centro, San Buenaventura, Cacalomacán, Sauces)</option>
-                                <option value="Metepec">Metepec (La Asunción, Providencia, Tecnológico)</option>
-                                <option value="Zinacantepec">Zinacantepec (San Luis Mextepec, Centro)</option>
-                                <option value="Lerma">Lerma (Parque Industrial, Los Reyes)</option>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Municipio / Zona de Entrega:</label>
+                            <select id="delivery-zone" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-brand-navy outline-none">
+                                <option value="San Buenaventura (Toluca)">San Buenaventura (Toluca)</option>
+                                <option value="Toluca Centro / Delegaciones">Toluca Centro / Delegaciones</option>
+                                <option value="Metepec">Metepec</option>
+                                <option value="Zinacantepec">Zinacantepec</option>
+                                <option value="Lerma">Lerma</option>
                                 <option value="San Mateo Atenco">San Mateo Atenco</option>
                                 <option value="Almoloya de Juárez">Almoloya de Juárez</option>
+                                <option value="Otra zona / Recojo en Tienda">Otra zona / Recojo en Tienda</option>
                             </select>
                         </div>
-
                         <div>
-                            <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-1.5">
-                                3. Colonia o Notas de descarga (Opcional)
-                            </label>
-                            <input type="text" id="quote-notes" placeholder="Ej. Col. Izcalli, requiere descarga a 1er piso..." class="w-full bg-white border border-brand-border rounded-xl px-3.5 py-2.5 text-xs text-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-navy shadow-sm">
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Notas Especiales (Opcional):</label>
+                            <input type="text" id="quote-notes" placeholder="Ej. Requiero entrega en 2do piso o facturación" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-brand-navy outline-none">
                         </div>
                     </div>
 
-                    <!-- Action Trigger -->
-                    <div class="mt-8 pt-6 border-t border-brand-border text-center space-y-3">
-                        <button onclick="sendWhatsAppQuote()" class="w-full sm:w-auto bg-green-600 hover:bg-green-500 text-white font-extrabold px-8 py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-3 text-base mx-auto">
-                            <i class="fa-brands fa-whatsapp text-2xl"></i>
-                            Enviar Cotización Formal por WhatsApp
+                    <!-- Botón Enviar Cotización -->
+                    <div class="pt-2">
+                        <button onclick="sendWhatsAppQuote()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-3 text-base">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                            <span>Enviar Cotización a WhatsApp (+52 722 843 6063)</span>
                         </button>
-                        <p class="text-xs text-brand-grey">
-                            <i class="fa-solid fa-lock text-brand-grey-light mr-1"></i> Te responderemos al instante con precios confirmados y opción de pago contra entrega.
-                        </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Foto / Ilustración de la Empresa -->
+            <div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-brand-navy text-white p-8 min-h-[300px] flex flex-col justify-end">
+                <!-- 
+                  INSTRUCCIÓN PARA FOTO DE LA EMPRESA:
+                  Si tienes una foto de la fachada o camión, descomenta la siguiente línea:
+                  <img src="tienda.jpg" alt="Instalaciones Materiales Pérez" class="absolute inset-0 w-full h-full object-cover opacity-40">
+                -->
+                <div class="relative z-10 space-y-3">
+                    <span class="bg-brand-lightsteel text-brand-navy font-bold text-xs px-3 py-1 rounded-full uppercase">Atención Personalizada</span>
+                    <h3 class="text-2xl font-black">Materiales Pérez en Toluca</h3>
+                    <p class="text-slate-300 text-sm">Empresa dedicada a la venta y suministro de materiales para construcción y ferretería con atención directa.</p>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <span class="text-brand-steel font-bold text-xs uppercase tracking-widest">¿Quiénes Somos?</span>
+                <h2 class="text-3xl font-black text-brand-navy">Soluciones para Proyectos de Construcción, Remodelación y Mantenimiento</h2>
+                <p class="text-slate-600 leading-relaxed text-sm">
+                    En <strong>Materiales Pérez</strong> ofrecemos una amplia variedad de materiales para obra, incluyendo cemento, mortero, acero, agregados, block, tabique, tubería PVC, conexiones, poliducto, tinacos, aditivos, herramientas y más.
+                </p>
+                <p class="text-slate-600 leading-relaxed text-sm">
+                    Contamos con atención personalizada para ayudarte a encontrar los materiales exactos que necesitas para tu proyecto y elaboramos tu cotización de forma rápida y sin compromiso.
+                </p>
+
+                <div class="grid grid-cols-2 gap-4 pt-4">
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                        <i data-lucide="truck" class="text-brand-steel w-6 h-6 mb-2"></i>
+                        <h4 class="font-bold text-sm text-brand-navy">Entregas Puntuales</h4>
+                        <p class="text-xs text-slate-500 mt-1">Suministro rápido directamente en tu obra.</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                        <i data-lucide="calculator" class="text-brand-steel w-6 h-6 mb-2"></i>
+                        <h4 class="font-bold text-sm text-brand-navy">Cotizaciones Claras</h4>
+                        <p class="text-xs text-slate-500 mt-1">Precios competitivos sin sorpresas.</p>
+                    </div>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- FLOATING STICKY BOTTOM BAR (Appears on Mobile & Desktop when items > 0) -->
-    <div id="sticky-bar" class="fixed bottom-0 left-0 right-0 bg-brand-navy text-white border-t-2 border-brand-grey-light shadow-2xl z-50 transform translate-y-full transition-transform duration-300 ease-in-out py-3 px-4">
-        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-brand-grey text-brand-navy flex items-center justify-center font-extrabold text-sm">
-                    <span id="sticky-badge">0</span>
-                </div>
-                <div>
-                    <div class="text-xs sm:text-sm font-bold text-white">Mi Cotización de Materiales</div>
-                    <div class="text-[11px] text-brand-grey-light hidden sm:block" id="sticky-summary-text">0 productos en la lista</div>
-                </div>
+    <!-- UBICACIÓN, MAPA Y CONTACTO OFICIAL -->
+    <section id="ubicacion" class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-brand-steel font-bold text-xs uppercase tracking-widest">Contacto Directo</span>
+                <h2 class="text-3xl font-black text-brand-navy mt-1">Ubicación y Datos de Contacto</h2>
+                <p class="text-slate-600 text-sm mt-2">Visítanos en nuestra sucursal o contáctanos por teléfono o correo electrónico.</p>
             </div>
 
-            <div class="flex items-center gap-2">
-                <a href="#cotizacion" class="bg-brand-grey text-brand-navy font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl hover:bg-brand-grey-light transition-colors flex items-center gap-2">
-                    <i class="fa-solid fa-list-check"></i>
-                    <span>Revisar y Enviar</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- CUSTOM TOAST NOTIFICATION CONTAINER -->
-    <div id="toast-container" class="fixed top-24 right-4 z-50 space-y-2 pointer-events-none"></div>
-
-    <!-- Delivery Coverage & Maps Section -->
-    <section id="zonas" class="py-16 bg-brand-bg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-10 items-center">
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
                 
-                <div class="lg:col-span-6 space-y-6">
-                    <span class="text-xs font-bold uppercase tracking-widest text-brand-grey bg-white px-3 py-1 rounded-full border border-brand-border">
-                        Logística Local
-                    </span>
-                    <h2 class="text-3xl font-extrabold text-brand-navy">
-                        Atención y Cobertura en el Valle de Toluca
-                    </h2>
-                    <p class="text-brand-body text-sm leading-relaxed">
-                        Ubicados estratégicamente sobre Av. Solidaridad Las Torres, garantizamos tiempos de respuesta ágiles con nuestra propia flota de camiones de volteo y camionetas de 3.5 toneladas.
-                    </p>
-
-                    <div class="grid sm:grid-cols-2 gap-3 pt-2">
-                        <div class="p-3.5 bg-white rounded-xl border border-brand-border">
-                            <div class="font-bold text-brand-navy text-xs flex items-center gap-2">
-                                <i class="fa-solid fa-location-dot text-brand-grey"></i> Toluca
-                            </div>
-                            <p class="text-[11px] text-brand-body mt-1">Centro, Zinacantepec, San Buenaventura, Capultitlán.</p>
+                <!-- Tarjeta de Información de Contacto -->
+                <div class="lg:col-span-5 bg-white p-8 rounded-2xl border border-slate-200 shadow-md space-y-6">
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-brand-navy/10 text-brand-navy rounded-xl">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
                         </div>
-                        <div class="p-3.5 bg-white rounded-xl border border-brand-border">
-                            <div class="font-bold text-brand-navy text-xs flex items-center gap-2">
-                                <i class="fa-solid fa-location-dot text-brand-grey"></i> Metepec
-                            </div>
-                            <p class="text-[11px] text-brand-body mt-1">Providencia, Tecnológico, La Asunción, San Gaspar.</p>
-                        </div>
-                        <div class="p-3.5 bg-white rounded-xl border border-brand-border">
-                            <div class="font-bold text-brand-navy text-xs flex items-center gap-2">
-                                <i class="fa-solid fa-location-dot text-brand-grey"></i> Lerma
-                            </div>
-                            <p class="text-[11px] text-brand-body mt-1">Parques industriales, San Pedro Tultepec, Centro.</p>
-                        </div>
-                        <div class="p-3.5 bg-white rounded-xl border border-brand-border">
-                            <div class="font-bold text-brand-navy text-xs flex items-center gap-2">
-                                <i class="fa-solid fa-location-dot text-brand-grey"></i> San Mateo Atenco
-                            </div>
-                            <p class="text-[11px] text-brand-body mt-1">Barrios tradicionales y desarrollos habitacionales.</p>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Dirección Oficial</h4>
+                            <p class="text-slate-600 text-sm mt-1">Profesora María del Refugio Alejandre Tarello 109, Delegación San Buenaventura, C.P. 50110 Toluca de Lerdo, Méx.</p>
                         </div>
                     </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-brand-navy/10 text-brand-navy rounded-xl">
+                            <i data-lucide="phone" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Teléfono Directo</h4>
+                            <a href="tel:+527222740023" class="text-brand-navy font-semibold text-sm hover:underline mt-1 block">+52 (722) 274 0023</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-emerald-500/10 text-emerald-600 rounded-xl">
+                            <i data-lucide="message-circle" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">WhatsApp de Cotizaciones</h4>
+                            <a href="https://wa.me/5217228436063" target="_blank" class="text-emerald-700 font-semibold text-sm hover:underline mt-1 block">+52 1 722 843 6063</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-brand-navy/10 text-brand-navy rounded-xl">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Correo Electrónico</h4>
+                            <a href="mailto:materialesperezsadecv@hotmail.com" class="text-brand-navy font-semibold text-sm hover:underline mt-1 block break-all">materialesperezsadecv@hotmail.com</a>
+                        </div>
+                    </div>
+
                 </div>
 
-                <!-- Google Maps Frame -->
-                <div class="lg:col-span-6">
-                    <div class="bg-brand-navy p-3 rounded-2xl shadow-xl">
-                        <div class="bg-slate-200 rounded-xl overflow-hidden h-80 relative border border-brand-grey/30">
-                            <iframe 
-                                title="Ubicación Materiales Pérez Toluca"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59850.53488219356!2d-99.6826!3d19.2826!2m3!1f0!1f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8981f3378393%3A0x6b44a8069d31d45d!2sToluca%20de%20Lerma%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1690000000000!5m2!1ses-419!2smx" 
-                                class="w-full h-full border-0" 
-                                allowfullscreen="" 
-                                loading="lazy">
-                            </iframe>
-                        </div>
-                    </div>
+                <!-- Mapa Incrustado con la Dirección Exacta -->
+                <div class="lg:col-span-7 bg-white p-2 rounded-2xl border border-slate-200 shadow-md h-[400px]">
+                    <iframe 
+                        title="Ubicación Materiales Pérez"
+                        src="https://maps.google.com/maps?q=Profesora%20Mar%C3%ADa%20del%20Refugio%20Alejandre%20Tarello%20109,%20Delegaci%C3%B3n%20San%20Buenaventura,%2050110%20Toluca%20de%20Lerdo,%20M%C3%A9x.&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        class="w-full h-full rounded-xl border-0" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
                 </div>
 
             </div>
+
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="py-16 bg-white border-t border-brand-border">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-10">
-                <span class="text-xs font-bold uppercase tracking-widest text-brand-grey">Transparencia Total</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy mt-1">Preguntas Frecuentes</h2>
+    <!-- PIE DE PÁGINA -->
+    <footer class="bg-brand-dark text-slate-400 py-12 border-t border-brand-steel/20 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 mb-8 text-sm">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <!-- Logo Footer -->
+                    <img src="logo.png" alt="Materiales Pérez" class="h-8 w-auto object-contain" onerror="this.style.display='none';">
+                    <span class="font-bold text-white text-lg">MATERIALES PÉREZ</span>
+                </div>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Venta y suministro de materiales para construcción y ferretería en Toluca, Estado de México. Cemento, varilla, agregados y herramientas.
+                </p>
             </div>
-
-            <div class="space-y-3" id="faq-accordion">
-                
-                <div class="border border-brand-border rounded-xl overflow-hidden">
-                    <button onclick="toggleFaq(this)" class="w-full text-left p-4 bg-brand-bg font-bold text-brand-navy flex justify-between items-center text-sm">
-                        <span>¿Cómo funciona el cotizador por WhatsApp?</span>
-                        <i class="fa-solid fa-chevron-down text-brand-grey transition-transform"></i>
-                    </button>
-                    <div class="p-4 bg-white text-xs text-brand-body hidden">
-                        Añades los materiales que necesitas desde el catálogo en la página, eliges tu municipio y al presionar "Enviar Cotización" se abrirá WhatsApp con el resumen listo para enviar a nuestro equipo. Te responderemos en minutos con precios netos y flete.
-                    </div>
+            <div>
+                <h4 class="font-bold text-white mb-3 text-sm">Contacto Rápido</h4>
+                <ul class="space-y-2 text-xs">
+                    <li>Profesora María del Refugio Alejandre Tarello 109, San Buenaventura, Toluca.</li>
+                    <li>Teléfono: +52 (722) 274 0023</li>
+                    <li>WhatsApp: +52 1 722 843 6063</li>
+                    <li>Email: materialesperezsadecv@hotmail.com</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-3 text-sm">Cobertura Principal</h4>
+                <div class="flex flex-wrap gap-1.5 text-xs">
+                    <span class="bg-brand-navy px-2.5 py-1 rounded border border-brand-steel/30 text-slate-300">Toluca</span>
+                    <span class="bg-brand-navy px-2.5 py-1 rounded border border-brand-steel/30 text-slate-300">San Buenaventura</span>
+                    <span class="bg-brand-navy px-2.5 py-1 rounded border border-brand-steel/30 text-slate-300">Metepec</span>
+                    <span class="bg-brand-navy px-2.5 py-1 rounded border border-brand-steel/30 text-slate-300">Zinacantepec</span>
+                    <span class="bg-brand-navy px-2.5 py-1 rounded border border-brand-steel/30 text-slate-300">Lerma</span>
                 </div>
-
-                <div class="border border-brand-border rounded-xl overflow-hidden">
-                    <button onclick="toggleFaq(this)" class="w-full text-left p-4 bg-brand-bg font-bold text-brand-navy flex justify-between items-center text-sm">
-                        <span>¿Puedo pagar al momento de recibir el material?</span>
-                        <i class="fa-solid fa-chevron-down text-brand-grey transition-transform"></i>
-                    </button>
-                    <div class="p-4 bg-white text-xs text-brand-body hidden">
-                        Sí. Contamos con modalidad de pago contra entrega en efectivo, transferencia SPEI o pago con tarjeta bancaria a través de terminal en sitio.
-                    </div>
-                </div>
-
-                <div class="border border-brand-border rounded-xl overflow-hidden">
-                    <button onclick="toggleFaq(this)" class="w-full text-left p-4 bg-brand-bg font-bold text-brand-navy flex justify-between items-center text-sm">
-                        <span>¿Realizan facturación fiscal?</span>
-                        <i class="fa-solid fa-chevron-down text-brand-grey transition-transform"></i>
-                    </button>
-                    <div class="p-4 bg-white text-xs text-brand-body hidden">
-                        Facturamos el 100% de tus compras. Solo proporciónanos tus datos fiscales al confirmar el pedido por WhatsApp.
-                    </div>
-                </div>
-
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-brand-navy-dark text-slate-300 py-12 border-t border-brand-navy-light/40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-                
-                <div class="space-y-3">
-                    <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-brand-navy border border-brand-grey/40 flex items-center justify-center p-1">
-                            <svg viewBox="0 0 100 100" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M50 10 L80 28 L80 62 L50 80 L20 62 L20 28 Z" stroke="#8AA0B4" stroke-width="6"/>
-                                <path d="M30 62 L30 38 L42 48 L42 62" stroke="#FFFFFF" stroke-width="5"/>
-                            </svg>
-                        </div>
-                        <span class="text-base font-black text-white tracking-wider">MATERIALES PÉREZ</span>
-                    </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">
-                        Empresa dedicada a la venta y suministro de materiales para construcción y ferretería en Toluca.
-                    </p>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-3 border-b border-brand-navy-light pb-2">Secciones</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="#inicio" class="hover:text-white transition-colors">Inicio</a></li>
-                        <li><a href="#catalogo" class="hover:text-white transition-colors">Catálogo Completo</a></li>
-                        <li><a href="#cotizacion" class="hover:text-white transition-colors">Mi Cotización</a></li>
-                        <li><a href="#zonas" class="hover:text-white transition-colors">Cobertura Toluca</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-3 border-b border-brand-navy-light pb-2">Contacto Directo</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><i class="fa-solid fa-location-dot text-brand-grey-light mr-2"></i> Av. Solidaridad Las Torres #104, Toluca</li>
-                        <li><i class="fa-solid fa-phone text-brand-grey-light mr-2"></i> (722) 123-4567</li>
-                        <li><i class="fa-brands fa-whatsapp text-green-400 mr-2"></i> (722) 987-6543</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-3 border-b border-brand-navy-light pb-2">Horarios</h4>
-                    <ul class="space-y-1 text-xs">
-                        <li class="flex justify-between"><span class="text-slate-400">Lun - Vie:</span> <span class="font-semibold text-white">7:00 am - 6:00 pm</span></li>
-                        <li class="flex justify-between"><span class="text-slate-400">Sábados:</span> <span class="font-semibold text-white">7:00 am - 2:00 pm</span></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="pt-6 border-t border-brand-navy-light/40 text-center text-xs text-slate-500">
-                <p>&copy; 2026 Materiales Pérez. Todos los derechos reservados. Toluca, Estado de México.</p>
-            </div>
+        <div class="max-w-7xl mx-auto px-4 border-t border-brand-steel/20 pt-6 text-center text-xs text-slate-500">
+            <p>&copy; 2026 Materiales Pérez S.A. de C.V. - Todos los derechos reservados. Toluca, Estado de México.</p>
         </div>
     </footer>
 
-    <!-- JavaScript Application Logic -->
+    <!-- BOTÓN FLOTANTE BARRA INFERIOR DE COTIZACIÓN RÁPIDA -->
+    <div id="sticky-quote-bar" class="fixed bottom-0 left-0 right-0 bg-brand-navy text-white p-4 shadow-2xl border-t border-brand-steel/40 z-30 transform translate-y-full transition-transform duration-300 flex justify-between items-center max-w-7xl mx-auto rounded-t-2xl">
+        <div class="flex items-center gap-3">
+            <div class="bg-brand-lightsteel text-brand-navy w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm" id="bar-item-count">0</div>
+            <div>
+                <p class="font-bold text-sm">Productos en tu lista</p>
+                <p class="text-xs text-slate-300 hidden sm:block">Listos para cotizar por WhatsApp</p>
+            </div>
+        </div>
+        <a href="#cotizador" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-5 py-2.5 rounded-lg text-sm transition flex items-center gap-2">
+            <span>Ver Cotización</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+    </div>
+
+    <!-- LOGICA EN JAVASCRIPT -->
     <script>
-        const PRODUCTS = [
-            { id: 1, name: "Cemento Cruz Azul 50kg", category: "Obra Negra", unit: "Bulto", description: "Cemento CPC 30R de máxima resistencia para colados y trabes.", isPopular: true },
-            { id: 2, name: "Cemento Tolteca 50kg", category: "Obra Negra", unit: "Bulto", description: "Cemento gris ideal para todo tipo de obra civil e infraestructuras.", isPopular: false },
-            { id: 3, name: "Varilla Corrugada 3/8\" (12m)", category: "Aceros", unit: "Pieza", description: "Varilla Grado 42 para armado de lozas, castillos y columnas.", isPopular: true },
-            { id: 4, name: "Varilla Corrugada 1/2\" (12m)", category: "Aceros", unit: "Pieza", description: "Varilla de alta resistencia estructural.", isPopular: true },
-            { id: 5, name: "Alambrón 1/4\"", category: "Aceros", unit: "Kg", description: "Para fabricación de estribos y anillos de cimentación.", isPopular: false },
-            { id: 6, name: "Alambre Recocido Cal. 16", category: "Aceros", unit: "Kg", description: "Para amarrado de varilla y armados de concreto.", isPopular: false },
-            { id: 7, name: "Arena Azul Triturada", category: "Agregados", unit: "m³", description: "Arena cernida de mina para pegado de tabique y aplanados.", isPopular: true },
-            { id: 8, name: "Grava de 3/4\"", category: "Agregados", unit: "m³", description: "Piedra triturada para concreto hidráulico firme.", isPopular: true },
-            { id: 9, name: "Block Hueco 12x20x40", category: "Mampostería", unit: "Pieza", description: "Block de concreto pesado para muros de carga y bardas.", isPopular: true },
-            { id: 10, name: "Tabique Rojo Recochido", category: "Mampostería", unit: "Millar", description: "Tabique de barro cocido artesanal para muros térmicos.", isPopular: false },
-            { id: 11, name: "Tubería PVC Sanitario 4\"", category: "Instalaciones", unit: "Pieza (6m)", description: "Tubo reforzado para desagua pluvial y sanitario.", isPopular: false },
-            { id: 12, name: "Tinaco Rotoplas 1100L", category: "Instalaciones", unit: "Pieza", description: "Incluye filtro y accesorios de conexión rápida.", isPopular: true }
+        // Listado Oficial de Productos de Materiales Pérez
+        const products = [
+            { id: 'cemento-gris', name: 'Cemento Gris Tolteca / CPC 30R', category: 'obra-gris', unit: 'Bulto 50kg', icon: 'package' },
+            { id: 'mortero', name: 'Mortero para Plantillas y Aplanados', category: 'obra-gris', unit: 'Bulto 50kg', icon: 'package' },
+            { id: 'varilla-38', name: 'Varilla Corrugada 3/8" (Número 3)', category: 'acero', unit: 'Pieza 12m', icon: 'layers' },
+            { id: 'varilla-12', name: 'Varilla Corrugada 1/2" (Número 4)', category: 'acero', unit: 'Pieza 12m', icon: 'layers' },
+            { id: 'armex', name: 'Armex / Castillo Electrosoldado 15x15-4', category: 'acero', unit: 'Tramo 6m', icon: 'grid' },
+            { id: 'malla-electrosoldada', name: 'Malla Electrosoldada 6x6-10/10', category: 'acero', unit: 'M2 / Rollo', icon: 'grid' },
+            { id: 'arena-azul', name: 'Arena de Mina / Arena Azul', category: 'obra-gris', unit: 'M3 / Camión', icon: 'truck' },
+            { id: 'grava-34', name: 'Grava Triturada 3/4"', category: 'obra-gris', unit: 'M3 / Camión', icon: 'truck' },
+            { id: 'tabique-rojo', name: 'Tabique Rojo Recocido', category: 'obra-gris', unit: 'Millar / Ciento', icon: 'box' },
+            { id: 'block-pesado', name: 'Block de Concreto 12x20x40', category: 'obra-gris', unit: 'Pieza', icon: 'box' },
+            { id: 'tuberia-pvc-4', name: 'Tubería PVC Sanitario 4" (100mm)', category: 'plomeria', unit: 'Tramo 6m', icon: 'pipette' },
+            { id: 'tinaco-1100', name: 'Tinaco Rotoplas 1100 Litros', category: 'plomeria', unit: 'Pieza', icon: 'database' },
+            { id: 'poliducto-12', name: 'Poliducto Naranja Eléctrico 1/2"', category: 'ferreteria', unit: 'Metro / Rollo', icon: 'disc' },
+            { id: 'aditivo-impermeabilizante', name: 'Aditivo para Concreto Festral / Sika', category: 'ferreteria', unit: 'Cubeta 19L', icon: 'droplet' },
+            { id: 'alambre-recocido', name: 'Alambre Recocido Calibre 16', category: 'acero', unit: 'Kilogramo', icon: 'hash' },
+            { id: 'pala-truper', name: 'Pala Cuadrada / Manteadora Truper', category: 'ferreteria', unit: 'Pieza', icon: 'wrench' }
         ];
 
-        // State Store
-        let cart = [];
-        let activeCategory = "Todos";
+        // Estado Global de la Cotización
+        let quoteState = {};
 
-        window.addEventListener('DOMContentLoaded', () => {
-            renderCatalogGrid();
-            updateCartUI();
+        // Inicialización
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProducts(products);
+            renderQuoteSummary();
+            lucide.createIcons();
         });
 
-        // Render Product Cards in Catalog
-        function renderCatalogGrid() {
-            const grid = document.getElementById('catalog-grid');
-            const searchVal = document.getElementById('catalog-search')?.value.toLowerCase() || "";
+        // Muestra notificación sin alert
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-message');
+            toastMsg.innerText = message;
+            toast.classList.remove('translate-x-full');
+            setTimeout(() => {
+                toast.classList.add('translate-x-full');
+            }, 2500);
+        }
 
-            const filtered = PRODUCTS.filter(p => {
-                const matchesCat = (activeCategory === "Todos" || p.category === activeCategory);
-                const matchesSearch = p.name.toLowerCase().includes(searchVal) || p.description.toLowerCase().includes(searchVal);
-                return matchesCat && matchesSearch;
-            });
+        // Renders de los Productos en el Grid
+        function renderProducts(items) {
+            const grid = document.getElementById('products-grid');
+            grid.innerHTML = '';
 
-            if (filtered.length === 0) {
+            if(items.length === 0) {
                 grid.innerHTML = `
-                    <div class="col-span-full text-center py-12 text-brand-grey bg-white rounded-2xl border border-brand-border">
-                        <i class="fa-solid fa-circle-exclamation text-3xl mb-2 text-brand-grey-light"></i>
-                        <p class="font-bold text-brand-navy">No encontramos productos con ese término</p>
-                        <p class="text-xs">Intenta buscando por otro término como "Cemento", "Varilla" o "Block".</p>
+                    <div class="col-span-full py-12 text-center text-slate-500">
+                        <i data-lucide="package-search" class="w-12 h-12 mx-auto mb-2 text-slate-300"></i>
+                        <p>No se encontraron materiales con ese criterio.</p>
                     </div>
                 `;
+                lucide.createIcons();
                 return;
             }
 
-            grid.innerHTML = filtered.map(product => {
-                const cartItem = cart.find(i => i.id === product.id);
-                const count = cartItem ? cartItem.qty : 0;
-
-                return `
-                    <div class="bg-white p-5 rounded-2xl border ${count > 0 ? 'border-brand-navy ring-1 ring-brand-navy' : 'border-brand-border'} hover:shadow-md transition-all flex flex-col justify-between group">
-                        <div>
-                            <div class="flex items-center justify-between gap-2 mb-3">
-                                <span class="text-[10px] font-bold uppercase tracking-wider text-brand-navy bg-brand-bg px-2.5 py-1 rounded-md border border-brand-border">
-                                    ${product.category}
-                                </span>
-                                ${product.isPopular ? `
-                                    <span class="text-[10px] font-bold text-white bg-brand-grey px-2 py-0.5 rounded-full">
-                                        Popular
-                                    </span>
-                                ` : ''}
+            items.forEach(prod => {
+                const qty = quoteState[prod.id] || 0;
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between";
+                
+                card.innerHTML = `
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="p-2.5 bg-brand-navy/5 text-brand-navy rounded-lg">
+                                <i data-lucide="${prod.icon}" class="w-5 h-5"></i>
                             </div>
-                            
-                            <h3 class="font-bold text-brand-navy text-base mb-1">
-                                ${product.name}
-                            </h3>
-                            
-                            <p class="text-xs text-brand-body leading-relaxed mb-4">
-                                ${product.description}
-                            </p>
+                            <span class="text-[10px] uppercase tracking-wider font-bold text-brand-steel bg-slate-100 px-2 py-1 rounded-md">${prod.unit}</span>
                         </div>
+                        <h4 class="font-bold text-slate-900 text-base mb-1">${prod.name}</h4>
+                    </div>
 
-                        <div class="pt-3 border-t border-brand-border space-y-3">
-                            <div class="text-xs text-brand-grey font-semibold flex justify-between items-center">
-                                <span>Unidad de Venta:</span>
-                                <span class="text-brand-navy font-bold">${product.unit}</span>
+                    <div class="mt-4 pt-4 border-t border-slate-100">
+                        ${qty === 0 ? `
+                            <button onclick="updateQty('${prod.id}', 1)" class="w-full bg-brand-navy hover:bg-brand-dark text-white text-xs font-bold py-2.5 px-4 rounded-lg transition flex items-center justify-center gap-2">
+                                <i data-lucide="plus" class="w-4 h-4"></i> Agregar a Cotización
+                            </button>
+                        ` : `
+                            <div class="flex items-center justify-between bg-slate-100 p-1.5 rounded-lg border border-slate-200">
+                                <button onclick="updateQty('${prod.id}',${qty - 1})" class="w-8 h-8 bg-white text-slate-800 rounded-md shadow-sm font-bold flex items-center justify-center hover:bg-slate-200 transition">-</button>
+                                <span class="font-black text-sm text-brand-navy px-3">${qty} <span class="text-[10px] font-normal text-slate-500">cant.</span></span>
+                                <button onclick="updateQty('${prod.id}',${qty + 1})" class="w-8 h-8 bg-brand-navy text-white rounded-md shadow-sm font-bold flex items-center justify-center hover:bg-brand-dark transition">+</button>
                             </div>
-                            
-                            <!-- Integrated Quantity Control Card Button -->
-                            ${count === 0 ? `
-                                <button onclick="updateQty(${product.id}, 1, true)" class="w-full bg-brand-navy text-white text-xs font-bold py-2.5 rounded-xl hover:bg-brand-navy-dark transition-colors flex items-center justify-center gap-2 shadow-sm">
-                                    <i class="fa-solid fa-plus text-brand-grey-light"></i> Agregar a Cotización
-                                </button>
-                            ` : `
-                                <div class="flex items-center justify-between bg-brand-bg border border-brand-navy rounded-xl p-1">
-                                    <button onclick="updateQty(${product.id}, -1)" class="w-8 h-8 rounded-lg bg-white hover:bg-slate-200 text-brand-navy font-black text-xs flex items-center justify-center transition-colors shadow-sm">
-                                        -
-                                    </button>
-                                    <div class="text-xs font-black text-brand-navy px-2">
-                                        ${count} <span class="text-[10px] font-normal text-brand-grey">${product.unit}(s)</span>
-                                    </div>
-                                    <button onclick="updateQty(${product.id}, 1)" class="w-8 h-8 rounded-lg bg-brand-navy hover:bg-brand-navy-dark text-white font-black text-xs flex items-center justify-center transition-colors shadow-sm">
-                                        +
-                                    </button>
-                                </div>
-                            `}
-                        </div>
+                        `}
                     </div>
                 `;
-            }).join('');
+                grid.appendChild(card);
+            });
+
+            lucide.createIcons();
         }
 
-        // Cart State Modifier
-        function updateQty(productId, change, isInitial = false) {
-            const product = PRODUCTS.find(p => p.id === productId);
-            if (!product) return;
-
-            let item = cart.find(i => i.id === productId);
-            if (!item && change > 0) {
-                cart.push({ ...product, qty: change });
-                if (isInitial) {
-                    showToast(`Agregado: <strong>${product.name}</strong>`);
-                }
-            } else if (item) {
-                item.qty += change;
-                if (item.qty <= 0) {
-                    cart = cart.filter(i => i.id !== productId);
-                }
+        // Actualizar Cantidad
+        function updateQty(id, newQty) {
+            const product = products.find(p => p.id === id);
+            if (newQty <= 0) {
+                delete quoteState[id];
+                showToast(`Se retiró "${product.name}" de tu lista`);
+            } else {
+                quoteState[id] = newQty;
+                showToast(`Actualizado: ${newQty}x ${product.name}`);
             }
-
-            renderCatalogGrid();
-            updateCartUI();
+            
+            // Re-renderizar productos y resumen
+            const currentFilter = document.querySelector('.cat-btn.active').getAttribute('onclick').match(/'([^']+)'/)[1];
+            if(currentFilter === 'todos') {
+                renderProducts(products);
+            } else {
+                filterCategory(currentFilter);
+            }
+            
+            renderQuoteSummary();
         }
 
-        function clearCart() {
-            cart = [];
-            renderCatalogGrid();
-            updateCartUI();
-            showToast("Lista de cotización vaciada.");
-        }
+        // Render del Resumen de Cotización
+        function renderQuoteSummary() {
+            const container = document.getElementById('quote-items-container');
+            const stickyBar = document.getElementById('sticky-quote-bar');
+            const itemCountEl = document.getElementById('bar-item-count');
+            
+            const selectedIds = Object.keys(quoteState);
+            const totalItems = selectedIds.reduce((sum, id) => sum + quoteState[id], 0);
 
-        // Synchronize Nav Badge, Final Quote Panel & Sticky Bar
-        function updateCartUI() {
-            const count = cart.reduce((acc, curr) => acc + curr.qty, 0);
-
-            // Nav badges
-            document.getElementById('nav-cart-badge').innerText = count;
-            document.getElementById('sticky-badge').innerText = count;
-            document.getElementById('quote-count-text').innerText = cart.length;
-
-            // Sticky Bar Visibility
-            const stickyBar = document.getElementById('sticky-bar');
-            const summaryText = document.getElementById('sticky-summary-text');
-
-            if (count > 0) {
+            // Actualizar Sticky Bar
+            itemCountEl.innerText = totalItems;
+            if (totalItems > 0) {
                 stickyBar.classList.remove('translate-y-full');
-                summaryText.innerText = `${cart.length} tipo(s) de material seleccionados`;
             } else {
                 stickyBar.classList.add('translate-y-full');
             }
 
-            // Render Quote Review List
-            const quoteContainer = document.getElementById('quote-items-list');
-            if (!quoteContainer) return;
-
-            if (cart.length === 0) {
-                quoteContainer.innerHTML = `
-                    <div class="text-center py-8 bg-white rounded-xl border border-brand-border">
-                        <i class="fa-solid fa-basket-shopping text-3xl mb-2 text-brand-grey-light block"></i>
-                        <p class="font-bold text-brand-navy text-sm">Tu cotización está vacía</p>
-                        <p class="text-xs text-brand-grey mt-1">Elige tus productos en el catálogo de arriba para armar tu presupuesto.</p>
-                        <a href="#catalogo" class="inline-block mt-3 bg-brand-navy text-white text-xs font-bold px-4 py-2 rounded-lg">
-                            Ir al Catálogo
-                        </a>
+            if (selectedIds.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-8 text-slate-400 border-2 border-dashed border-slate-200 rounded-xl">
+                        <i data-lucide="shopping-cart" class="w-10 h-10 mx-auto mb-2 text-slate-300"></i>
+                        <p class="text-sm font-medium">Aún no has agregado productos a tu cotización.</p>
+                        <p class="text-xs text-slate-400 mt-1">Selecciona productos del catálogo superior.</p>
                     </div>
                 `;
+                lucide.createIcons();
                 return;
             }
 
-            quoteContainer.innerHTML = cart.map(item => `
-                <div class="flex items-center justify-between bg-white p-3 rounded-xl border border-brand-border shadow-sm">
-                    <div class="pr-2">
-                        <div class="font-bold text-brand-navy text-xs sm:text-sm">${item.name}</div>
-                        <div class="text-[11px] text-brand-grey">${item.category} • Unidad: ${item.unit}</div>
-                    </div>
-                    
-                    <div class="flex items-center gap-2">
-                        <div class="flex items-center bg-brand-bg rounded-lg border border-brand-border p-1">
-                            <button onclick="updateQty(${item.id}, -1)" class="w-6 h-6 rounded bg-white hover:bg-slate-200 text-brand-navy font-bold text-xs flex items-center justify-center">
-                                -
-                            </button>
-                            <span class="w-8 text-center font-bold text-xs text-brand-navy">${item.qty}</span>
-                            <button onclick="updateQty(${item.id}, 1)" class="w-6 h-6 rounded bg-brand-navy text-white font-bold text-xs flex items-center justify-center">
-                                +
-                            </button>
+            container.innerHTML = '';
+            selectedIds.forEach(id => {
+                const prod = products.find(p => p.id === id);
+                const qty = quoteState[id];
+
+                const row = document.createElement('div');
+                row.className = "flex items-center justify-between p-3 bg-slate-50 rounded-xl border border-slate-200 text-sm";
+                row.innerHTML = `
+                    <div class="flex items-center gap-3">
+                        <span class="font-black text-brand-navy bg-white px-2.5 py-1 rounded-md border border-slate-200 text-xs">${qty}x</span>
+                        <div>
+                            <p class="font-bold text-slate-800">${prod.name}</p>
+                            <p class="text-[10px] text-slate-500">${prod.unit}</p>
                         </div>
-                        <button onclick="updateQty(${item.id}, -${item.qty})" class="text-slate-400 hover:text-red-600 p-1 transition-colors">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
                     </div>
-                </div>
-            `).join('');
-        }
-
-        function setCategory(category) {
-            activeCategory = category;
-            
-            document.querySelectorAll('.category-btn').forEach(btn => {
-                if (btn.innerText.includes(category) || (category === "Todos" && btn.innerText.includes("Todos"))) {
-                    btn.className = "category-btn active px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-brand-navy text-white shadow-sm transition-all";
-                } else {
-                    btn.className = "category-btn px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap bg-white text-brand-body border border-brand-border hover:border-brand-grey transition-all";
-                }
+                    <div class="flex items-center gap-2">
+                        <button onclick="updateQty('${id}', ${qty - 1})" class="w-7 h-7 bg-white text-slate-700 rounded border hover:bg-slate-200 flex items-center justify-center font-bold text-xs">-</button>
+                        <button onclick="updateQty('${id}', ${qty + 1})" class="w-7 h-7 bg-white text-slate-700 rounded border hover:bg-slate-200 flex items-center justify-center font-bold text-xs">+</button>
+                    </div>
+                `;
+                container.appendChild(row);
             });
 
-            renderCatalogGrid();
+            lucide.createIcons();
         }
 
-        function filterCatalog() {
-            renderCatalogGrid();
+        // Vaciar Cotización
+        function clearQuote() {
+            quoteState = {};
+            renderProducts(products);
+            renderQuoteSummary();
+            showToast("Lista de cotización vaciada");
         }
 
-        // WhatsApp Quote Sender
+        // Filtrar Categorías
+        function filterCategory(cat) {
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-navy', 'text-white', 'active');
+                btn.classList.add('bg-white', 'text-slate-700');
+            });
+            event.currentTarget.classList.add('bg-brand-navy', 'text-white', 'active');
+            event.currentTarget.classList.remove('bg-white', 'text-slate-700');
+
+            if (cat === 'todos') {
+                renderProducts(products);
+            } else {
+                const filtered = products.filter(p => p.category === cat);
+                renderProducts(filtered);
+            }
+        }
+
+        // Búsqueda Dinámica
+        function searchProducts() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const filtered = products.filter(p => p.name.toLowerCase().includes(query));
+            renderProducts(filtered);
+        }
+
+        // Enviar Cotización por WhatsApp con formato optimizado
         function sendWhatsAppQuote() {
-            if (cart.length === 0) {
-                showToast("⚠️ Agrega al menos un material antes de enviar.");
-                document.getElementById('catalogo')?.scrollIntoView({ behavior: 'smooth' });
+            const selectedIds = Object.keys(quoteState);
+            if (selectedIds.length === 0) {
+                showToast("Por favor agrega al menos un producto a tu lista primero");
                 return;
             }
 
-            const zone = document.getElementById('quote-zone')?.value || "Toluca";
-            const notes = document.getElementById('quote-notes')?.value || "Sin observaciones";
+            const zone = document.getElementById('delivery-zone').value;
+            const notes = document.getElementById('quote-notes').value.trim();
 
-            let msg = `*COTIZACIÓN DE MATERIALES - MATERIALES PÉREZ*\n`;
-            msg += `==============================\n`;
-            msg += `📍 *Ubicación / Municipio:* ${zone}\n`;
-            msg += `📝 *Notas de entrega:* ${notes}\n\n`;
-            msg += `📦 *DESGLOSE DE MATERIALES:*\n`;
+            let message = `*SOLICITUD DE COTIZACIÓN - MATERIALES PÉREZ*\n`;
+            message += `-----------------------------------\n`;
+            message += `*Ubicación de entrega:* ${zone}\n`;
+            if (notes) message += `*Notas:* ${notes}\n`;
+            message += `-----------------------------------\n`;
+            message += `*PRODUCTOS SOLICITADOS:*\n`;
 
-            cart.forEach((item, index) => {
-                msg += `${index + 1}. *${item.name}* -> ${item.qty} ${item.unit}(s)\n`;
+            selectedIds.forEach((id, idx) => {
+                const prod = products.find(p => p.id === id);
+                message += `${idx + 1}. *${prod.name}* -> Cantidad: *${quoteState[id]}* (${prod.unit})\n`;
             });
 
-            msg += `==============================\n`;
-            msg += `Favor de confirmar disponibilidad y costo total con flete a mi dirección. ¡Gracias!`;
+            message += `-----------------------------------\n`;
+            message += `Favor de confirmar disponibilidad y costo total. ¡Gracias!`;
 
-            const whatsappNumber = "527221234567";
-            const targetUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
-            window.open(targetUrl, '_blank');
-        }
-
-        // Toast Popup Helper (Replaces default alerts)
-        function showToast(message) {
-            const container = document.getElementById('toast-container');
-            if (!container) return;
-
-            const toast = document.createElement('div');
-            toast.className = "bg-brand-navy text-white text-xs font-medium px-4 py-3 rounded-xl shadow-2xl border border-brand-grey-light flex items-center gap-2 pointer-events-auto animate-toast";
-            toast.innerHTML = `<i class="fa-solid fa-circle-check text-green-400 text-sm"></i> <span>${message}</span>`;
-
-            container.appendChild(toast);
-
-            setTimeout(() => {
-                toast.style.opacity = '0';
-                toast.style.transform = 'translateY(100%)';
-                toast.style.transition = 'all 0.2s ease-out';
-                setTimeout(() => toast.remove(), 200);
-            }, 2500);
-        }
-
-        function toggleFaq(button) {
-            const content = button.nextElementSibling;
-            const icon = button.querySelector('i');
-            
-            if (content.classList.contains('hidden')) {
-                content.classList.remove('hidden');
-                icon.style.transform = 'rotate(180deg)';
-            } else {
-                content.classList.add('hidden');
-                icon.style.transform = 'rotate(0deg)';
-            }
+            const encodedMessage = encodeURIComponent(message);
+            // Número oficial de WhatsApp: +52 1 722 843 6063 (5217228436063)
+            window.open(`https://wa.me/5217228436063?text=${encodedMessage}`, '_blank');
         }
     </script>
 </body>
