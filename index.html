@@ -51,7 +51,8 @@
       "@context": "https://schema.org",
       "@type": "HardwareStore",
       "name": "Materiales Pérez",
-      "image": "logo.png",
+      "image": "materialesperez_logo_1.png
+      ",
       "@id": "https://materialesperez.pages.dev",
       "url": "https://materialesperez.pages.dev",
       "telephone": "+527222740023",
@@ -126,36 +127,33 @@
             </div>
             <div class="flex items-center gap-3 font-medium text-white">
                 <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span>Atención y Entregas HOY en Toluca</span>
+                <span>Atención y Entregas en Toluca</span>
             </div>
         </div>
     </div>
 
     <!-- Navegación Principal -->
     <header class="sticky top-0 z-40 bg-brand-navy/95 backdrop-blur-md text-white shadow-lg border-b border-brand-steel/30">
-        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-4 py-2.5 flex justify-between items-center">
             
-            <!-- CONTENEDOR DEL LOGO (Soporta Imagen propia con respaldo SVG) -->
-            <a href="#" class="flex items-center gap-3 group">
-                <!-- 
-                  INSTRUCCIÓN: Para usar tu propio logo en imagen:
-                  1. Coloca tu archivo de logo (ej. "logo.png") en la misma carpeta que este archivo index.html.
-                  2. El atributo onerror cargará automáticamente el diseño SVG si la imagen no se encuentra.
-                -->
-                <img src="logo.png" alt="Materiales Pérez Logo" class="h-11 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';">
-                
-                <!-- Logo Vectorial Fallback de Respaldo -->
-                <div id="fallback-logo" class="flex items-center gap-3" style="display: none;">
-                    <div class="w-10 h-10 rounded-lg bg-brand-steel/20 border border-brand-steel/40 flex items-center justify-center p-1.5 group-hover:border-brand-lightsteel transition">
-                        <svg viewBox="0 0 100 100" class="w-full h-full fill-none stroke-current text-brand-lightsteel" stroke-width="8">
-                            <path d="M 20 80 L 20 40 L 50 20 L 80 40 L 80 80 Z" />
-                            <path d="M 35 80 L 35 50 L 65 50 L 65 80" />
-                            <path d="M 50 20 L 50 80" />
-                        </svg>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="font-extrabold text-lg tracking-tight leading-none text-white">MATERIALES</span>
-                        <span class="font-bold text-sm tracking-widest text-brand-lightsteel leading-none mt-1">PÉREZ</span>
+            <!-- RECUADRO DEDICADO PARA EL LOGO -->
+            <a href="#" class="group">
+                <div class="bg-white px-3.5 py-1.5 rounded-xl shadow-md border border-slate-200 flex items-center justify-center transition-transform transform group-hover:scale-[1.02]">
+                    <img src="materialesperez_logo_1.png" alt="Materiales Pérez Logo" class="h-10 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';">
+                    
+                    <!-- Logo Vectorial Fallback en caso de no cargar la imagen -->
+                    <div id="fallback-logo" class="items-center gap-2.5" style="display: none;">
+                        <div class="w-8 h-8 rounded-lg bg-brand-navy flex items-center justify-center p-1">
+                            <svg viewBox="0 0 100 100" class="w-full h-full fill-none stroke-current text-white" stroke-width="8">
+                                <path d="M 20 80 L 20 40 L 50 20 L 80 40 L 80 80 Z" />
+                                <path d="M 35 80 L 35 50 L 65 50 L 65 80" />
+                                <path d="M 50 20 L 50 80" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col text-left">
+                            <span class="font-extrabold text-sm tracking-tight leading-none text-brand-navy">MATERIALES</span>
+                            <span class="font-bold text-[10px] tracking-widest text-brand-steel leading-none mt-0.5">PÉREZ</span>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -187,9 +185,6 @@
 
         <div class="relative max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-8 items-center">
             <div class="md:col-span-7 space-y-6">
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-steel/20 border border-brand-steel/40 text-brand-lightsteel text-xs font-semibold uppercase tracking-wider">
-                    <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i> Proveedor Confiable en Toluca
-                </div>
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-tight">
                     Suministro Completo de <span class="text-brand-lightsteel">Materiales y Ferretería</span> en Toluca
                 </h1>
@@ -232,7 +227,7 @@
                         <span class="text-xs bg-emerald-500/20 text-emerald-300 font-bold px-2.5 py-1 rounded-full border border-emerald-500/30">Abierto</span>
                     </div>
                     <ul class="space-y-2 text-sm text-slate-300">
-                        <li class="flex justify-between"><span>Lunes a Viernes:</span> <span class="font-medium text-white">8:00 AM - 6:00 PM</span></li>
+                        <li class="flex justify-between"><span>Lunes a Viernes:</span> <span class="font-medium text-white">8:00 AM - 5:00 PM</span></li>
                         <li class="flex justify-between"><span>Sábados:</span> <span class="font-medium text-white">8:00 AM - 2:00 PM</span></li>
                         <li class="flex justify-between"><span>Domingos:</span> <span class="font-medium text-slate-400">Cerrado</span></li>
                     </ul>
@@ -344,8 +339,8 @@
                 <!-- 
                   INSTRUCCIÓN PARA FOTO DE LA EMPRESA:
                   Si tienes una foto de la fachada o camión, descomenta la siguiente línea:
-                  <img src="tienda.jpg" alt="Instalaciones Materiales Pérez" class="absolute inset-0 w-full h-full object-cover opacity-40">
                 -->
+                <img src="mperez_exterior.jpeg" alt="Instalaciones Materiales Pérez" class="absolute inset-0 w-full h-full object-cover opacity-40">
                 <div class="relative z-10 space-y-3">
                     <span class="bg-brand-lightsteel text-brand-navy font-bold text-xs px-3 py-1 rounded-full uppercase">Atención Personalizada</span>
                     <h3 class="text-2xl font-black">Materiales Pérez en Toluca</h3>
@@ -387,7 +382,7 @@
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="text-brand-steel font-bold text-xs uppercase tracking-widest">Contacto Directo</span>
                 <h2 class="text-3xl font-black text-brand-navy mt-1">Ubicación y Datos de Contacto</h2>
-                <p class="text-slate-600 text-sm mt-2">Visítanos en nuestra sucursal o contáctanos por teléfono o correo electrónico.</p>
+                <p class="text-slate-600 text-sm mt-2">Visítanos en nuestra sucursal o contáctanos por teléfono, whatsapp o correo electrónico.</p>
             </div>
 
             <div class="grid lg:grid-cols-12 gap-8 items-start">
@@ -457,9 +452,11 @@
     <footer class="bg-brand-dark text-slate-400 py-12 border-t border-brand-steel/20 mt-auto">
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 mb-8 text-sm">
             <div>
+                <!-- RECUADRO LOGO FOOTER -->
                 <div class="flex items-center gap-3 mb-4">
-                    <!-- Logo Footer -->
-                    <img src="logo.png" alt="Materiales Pérez" class="h-8 w-auto object-contain" onerror="this.style.display='none';">
+                    <div class="bg-white px-3 py-1.5 rounded-lg shadow-sm border border-slate-200 inline-flex items-center justify-center">
+                        <img src="materialesperez_logo_1.png" alt="Materiales Pérez" class="h-7 w-auto object-contain" onerror="this.style.display='none';">
+                    </div>
                     <span class="font-bold text-white text-lg">MATERIALES PÉREZ</span>
                 </div>
                 <p class="text-slate-400 text-xs leading-relaxed">
