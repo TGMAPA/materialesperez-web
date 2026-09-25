@@ -51,8 +51,7 @@
       "@context": "https://schema.org",
       "@type": "HardwareStore",
       "name": "Materiales Pérez",
-      "image": "materialesperez_logo_1.png
-      ",
+      "image": "materialesperez_logo_1.png",
       "@id": "https://materialesperez.pages.dev",
       "url": "https://materialesperez.pages.dev",
       "telephone": "+527222740023",
@@ -88,30 +87,29 @@
       "areaServed": [
         "Toluca",
         "Metepec",
-        "Zinacantepec",
-        "San Mateo Atenco",
-        "Lerma",
-        "Almoloya de Juárez"
+        "Zinacantepec"
       ]
     }
     </script>
 
     <style>
         .custom-scrollbar::-webkit-scrollbar {
+            height: 6px;
             width: 6px;
         }
         .custom-scrollbar::-webkit-scrollbar-track {
             background: #f1f1f1;
+            border-radius: 4px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb {
             background: #6E8294;
-            border-radius: 3px;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body class="bg-brand-bglight text-slate-800 font-sans antialiased flex flex-col min-h-screen">
 
-    <!-- Notificación Toast Personalizada (Sin usar alert) -->
+    <!-- Notificación Toast Personalizada -->
     <div id="toast" class="fixed top-20 right-5 z-50 transform translate-x-full transition-transform duration-300 ease-in-out bg-brand-navy text-white px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3 border border-brand-steel/30 pointer-events-none">
         <i data-lucide="check-circle-2" class="text-emerald-400 w-5 h-5"></i>
         <span id="toast-message" class="text-sm font-medium">Producto actualizado</span>
@@ -136,12 +134,10 @@
     <header class="sticky top-0 z-40 bg-brand-navy/95 backdrop-blur-md text-white shadow-lg border-b border-brand-steel/30">
         <div class="max-w-7xl mx-auto px-4 py-2.5 flex justify-between items-center">
             
-            <!-- RECUADRO DEDICADO PARA EL LOGO -->
             <a href="#" class="group">
                 <div class="bg-white px-3.5 py-1.5 rounded-xl shadow-md border border-slate-200 flex items-center justify-center transition-transform transform group-hover:scale-[1.02]">
                     <img src="materialesperez_logo_1.png" alt="Materiales Pérez Logo" class="h-10 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';">
                     
-                    <!-- Logo Vectorial Fallback en caso de no cargar la imagen -->
                     <div id="fallback-logo" class="items-center gap-2.5" style="display: none;">
                         <div class="w-8 h-8 rounded-lg bg-brand-navy flex items-center justify-center p-1">
                             <svg viewBox="0 0 100 100" class="w-full h-full fill-none stroke-current text-white" stroke-width="8">
@@ -158,7 +154,6 @@
                 </div>
             </a>
 
-            <!-- Menú de Navegación -->
             <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
                 <a href="#catalogo" class="hover:text-brand-lightsteel transition">Catálogo de Materiales</a>
                 <a href="#cotizador" class="hover:text-brand-lightsteel transition">Mi Cotización</a>
@@ -166,7 +161,6 @@
                 <a href="#ubicacion" class="hover:text-brand-lightsteel transition">Ubicación</a>
             </nav>
 
-            <!-- Acceso Directo WhatsApp -->
             <div class="flex items-center gap-3">
                 <a href="https://wa.me/5217228436063?text=Hola,%20busco%20informaci%C3%B3n%20sobre%20materiales%20de%20construcci%C3%B3n" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-2 shadow-md transition transform hover:-translate-y-0.5">
                     <i data-lucide="message-circle" class="w-4 h-4"></i>
@@ -176,10 +170,8 @@
         </div>
     </header>
 
-    <!-- Hero Section con Opción de Imagen de Fondo -->
+    <!-- Hero Section -->
     <section class="relative bg-brand-navy text-white overflow-hidden py-16 lg:py-24 border-b border-brand-steel/30">
-        
-        <!-- OPALINA DE FONDO / FOTO DE TU NEGOCIO (Opcional) -->
         <div class="absolute inset-0 opacity-15 bg-cover bg-center pointer-events-none" style="background-image: url('foto-tienda.jpg');"></div>
         <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-navy/95 to-brand-navy/80"></div>
 
@@ -200,7 +192,6 @@
                     </a>
                 </div>
                 
-                <!-- Mini Indicadores -->
                 <div class="grid grid-cols-3 gap-4 pt-6 border-t border-brand-steel/20 text-xs sm:text-sm">
                     <div>
                         <p class="font-bold text-white text-base">San Buenaventura</p>
@@ -217,14 +208,12 @@
                 </div>
             </div>
 
-            <!-- Tarjeta Informativa Lateral -->
             <div class="md:col-span-5">
                 <div class="bg-white/5 border border-brand-steel/30 backdrop-blur-md rounded-2xl p-6 shadow-2xl text-slate-100 space-y-4">
                     <div class="flex items-center justify-between border-b border-brand-steel/30 pb-4">
                         <h3 class="font-bold text-lg text-white flex items-center gap-2">
                             <i data-lucide="clock" class="text-brand-lightsteel w-5 h-5"></i> Horarios de Atención
                         </h3>
-                        <span class="text-xs bg-emerald-500/20 text-emerald-300 font-bold px-2.5 py-1 rounded-full border border-emerald-500/30">Abierto</span>
                     </div>
                     <ul class="space-y-2 text-sm text-slate-300">
                         <li class="flex justify-between"><span>Lunes a Viernes:</span> <span class="font-medium text-white">8:00 AM - 5:00 PM</span></li>
@@ -242,40 +231,85 @@
         </div>
     </section>
 
-    <!-- SECCIÓN UNIFICADA: Catálogo con Selección para Cotización -->
-    <section id="catalogo" class="py-16 max-w-7xl mx-auto px-4 flex-grow">
+    <!-- SECCIÓN CATÁLOGO DE PRODUCTOS -->
+    <section id="catalogo" class="py-12 max-w-7xl mx-auto px-4 flex-grow w-full">
         
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
-            <div>
-                <span class="text-brand-steel font-bold text-xs uppercase tracking-widest">Catálogo Interactivo</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-brand-navy mt-1">Selecciona los Materiales para tu Cotización</h2>
-                <p class="text-slate-600 text-sm mt-1">Agrega las cantidades que requieres y da clic en "Generar Cotización" para enviar tu lista directamente por WhatsApp.</p>
+        <div class="mb-6">
+            <span class="text-brand-steel font-bold text-xs uppercase tracking-widest">Catálogo Oficial</span>
+            <h2 class="text-2xl sm:text-3xl font-black text-brand-navy mt-1">Selecciona los Materiales para tu Cotización</h2>
+            <p class="text-slate-600 text-sm mt-1">Navega por las líneas de productos o usa el buscador para cotizar rápido.</p>
+        </div>
+
+        <!-- Filtros de Categorías Generales Exactas -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-3 mb-6 custom-scrollbar" id="category-filters">
+            <button onclick="filterCategory('todos')" class="cat-btn active bg-brand-navy text-white px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap shadow-sm transition border border-brand-navy">
+                Todos
+            </button>
+            <button onclick="filterCategory('Bultos')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">
+                Bultos
+            </button>
+            <button onclick="filterCategory('Aceros')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">
+                Aceros
+            </button>
+            <button onclick="filterCategory('Agregados')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">
+                Agregados
+            </button>
+            <button onclick="filterCategory('Poliductos y Mangueras')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">
+                Poliductos y Mangueras
+            </button>
+            <button onclick="filterCategory('Tubos de Carton y Tinacos')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">
+                Tubos de Cartón y Tinacos
+            </button>
+            <button onclick="filterCategory('Aditivos')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">
+                Aditivos
+            </button>
+            <button onclick="filterCategory('Ferretería')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">
+                Ferretería
+            </button>
+            <button onclick="filterCategory('Tubería y Conexiones PVC')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">
+                Tubería y Conexiones PVC
+            </button>
+        </div>
+
+        <!-- Barra de Búsqueda y Configuración de Ventana de Productos -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm mb-6 flex flex-col md:flex-row gap-4 items-center justify-between">
+            <div class="relative w-full md:flex-1">
+                <i data-lucide="search" class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 w-4 h-4"></i>
+                <input type="text" id="search-input" onkeyup="searchProducts()" placeholder="Buscar producto o código (ej. BT001, Cemento, Varilla, PVC)..." class="w-full pl-10 pr-4 py-2.5 bg-slate-50 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-navy text-sm">
             </div>
 
-            <!-- Filtros de Categorías -->
-            <div class="flex items-center gap-2 overflow-x-auto pb-2 custom-scrollbar" id="category-filters">
-                <button onclick="filterCategory('todos')" class="cat-btn active bg-brand-navy text-white px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap shadow-sm transition">Todos</button>
-                <button onclick="filterCategory('obra-gris')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">Obra Gris</button>
-                <button onclick="filterCategory('acero')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">Acero y Malla</button>
-                <button onclick="filterCategory('plomeria')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">Plomería y PVC</button>
-                <button onclick="filterCategory('ferreteria')" class="cat-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition">Ferretería y Más</button>
+            <div class="flex items-center justify-between w-full md:w-auto gap-4 text-xs text-slate-600 font-medium">
+                <div class="flex items-center gap-2">
+                    <span>Ver por ventana:</span>
+                    <select id="items-per-page" onchange="changeItemsPerPage(this.value)" class="bg-slate-50 border border-slate-200 rounded-lg py-2 px-3 font-bold text-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-navy">
+                        <option value="12">12 productos</option>
+                        <option value="24">24 productos</option>
+                        <option value="48">48 productos</option>
+                        <option value="1000">Ver Todos</option>
+                    </select>
+                </div>
             </div>
         </div>
 
-        <!-- Buscador Rápido -->
-        <div class="relative mb-8">
-            <i data-lucide="search" class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 w-5 h-5"></i>
-            <input type="text" id="search-input" onkeyup="searchProducts()" placeholder="Buscar por nombre (ej. Cemento, Varilla, Tinaco, PVC)..." class="w-full pl-12 pr-4 py-3 bg-white rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-navy shadow-sm text-sm">
+        <!-- Contador e Información de Navegación -->
+        <div class="flex items-center justify-between mb-4 text-xs font-bold text-slate-500 uppercase tracking-wider">
+            <span id="catalog-counter">Mostrando 0 productos</span>
+            <span id="catalog-page-info" class="text-brand-steel">Página 1</span>
         </div>
 
         <!-- Grid de Productos -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="products-grid">
-            <!-- Los productos se generan mediante JavaScript con soporte de imagen personalizada opcional -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5" id="products-grid">
+            <!-- Los productos se generan dinámicamente mediante JS -->
+        </div>
+
+        <!-- Paginación Profesional -->
+        <div id="pagination-controls" class="mt-8 flex flex-wrap items-center justify-center gap-2 border-t border-slate-200 pt-6">
+            <!-- Controles de paginación generados mediante JS -->
         </div>
 
     </section>
 
-    <!-- SECCIÓN RESUMEN DE COTIZACIÓN Y ENVÍO A WHATSAPP -->
+    <!-- SECCIÓN RESUMEN DE COTIZACIÓN -->
     <section id="cotizador" class="bg-slate-100 py-16 border-t border-slate-200">
         <div class="max-w-4xl mx-auto px-4">
             <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
@@ -292,12 +326,10 @@
                 </div>
 
                 <div class="p-6 space-y-6">
-                    <!-- Lista de Productos Seleccionados -->
                     <div id="quote-items-container" class="space-y-3 min-h-[120px]">
                         <!-- Se llena dinámicamente mediante JS -->
                     </div>
 
-                    <!-- Datos Adicionales de Entrega -->
                     <div class="border-t border-slate-200 pt-6 grid md:grid-cols-2 gap-4">
                         <div>
                             <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Municipio / Zona de Entrega:</label>
@@ -306,9 +338,6 @@
                                 <option value="Toluca Centro / Delegaciones">Toluca Centro / Delegaciones</option>
                                 <option value="Metepec">Metepec</option>
                                 <option value="Zinacantepec">Zinacantepec</option>
-                                <option value="Lerma">Lerma</option>
-                                <option value="San Mateo Atenco">San Mateo Atenco</option>
-                                <option value="Almoloya de Juárez">Almoloya de Juárez</option>
                                 <option value="Otra zona / Recojo en Tienda">Otra zona / Recojo en Tienda</option>
                             </select>
                         </div>
@@ -318,7 +347,6 @@
                         </div>
                     </div>
 
-                    <!-- Botón Enviar Cotización -->
                     <div class="pt-2">
                         <button onclick="sendWhatsAppQuote()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-3 text-base">
                             <i data-lucide="send" class="w-5 h-5"></i>
@@ -334,12 +362,7 @@
     <section id="nosotros" class="py-16 bg-white border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
             
-            <!-- Foto / Ilustración de la Empresa -->
             <div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-brand-navy text-white p-8 min-h-[300px] flex flex-col justify-end">
-                <!-- 
-                  INSTRUCCIÓN PARA FOTO DE LA EMPRESA:
-                  Si tienes una foto de la fachada o camión, descomenta la siguiente línea:
-                -->
                 <img src="mperez_exterior.jpeg" alt="Instalaciones Materiales Pérez" class="absolute inset-0 w-full h-full object-cover opacity-40">
                 <div class="relative z-10 space-y-3">
                     <span class="bg-brand-lightsteel text-brand-navy font-bold text-xs px-3 py-1 rounded-full uppercase">Atención Personalizada</span>
@@ -375,7 +398,7 @@
         </div>
     </section>
 
-    <!-- UBICACIÓN, MAPA Y CONTACTO OFICIAL -->
+    <!-- UBICACIÓN Y CONTACTO -->
     <section id="ubicacion" class="py-16 bg-slate-50 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-4">
             
@@ -387,7 +410,6 @@
 
             <div class="grid lg:grid-cols-12 gap-8 items-start">
                 
-                <!-- Tarjeta de Información de Contacto -->
                 <div class="lg:col-span-5 bg-white p-8 rounded-2xl border border-slate-200 shadow-md space-y-6">
                     
                     <div class="flex items-start gap-4">
@@ -432,7 +454,6 @@
 
                 </div>
 
-                <!-- Mapa Incrustado con la Dirección Exacta -->
                 <div class="lg:col-span-7 bg-white p-2 rounded-2xl border border-slate-200 shadow-md h-[400px]">
                     <iframe 
                         title="Ubicación Materiales Pérez"
@@ -452,7 +473,6 @@
     <footer class="bg-brand-dark text-slate-400 py-12 border-t border-brand-steel/20 mt-auto">
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 mb-8 text-sm">
             <div>
-                <!-- RECUADRO LOGO FOOTER -->
                 <div class="flex items-center gap-3 mb-4">
                     <div class="bg-white px-3 py-1.5 rounded-lg shadow-sm border border-slate-200 inline-flex items-center justify-center">
                         <img src="materialesperez_logo_1.png" alt="Materiales Pérez" class="h-7 w-auto object-contain" onerror="this.style.display='none';">
@@ -479,7 +499,6 @@
                     <span class="bg-brand-navy px-2.5 py-1 rounded border border-brand-steel/30 text-slate-300">San Buenaventura</span>
                     <span class="bg-brand-navy px-2.5 py-1 rounded border border-brand-steel/30 text-slate-300">Metepec</span>
                     <span class="bg-brand-navy px-2.5 py-1 rounded border border-brand-steel/30 text-slate-300">Zinacantepec</span>
-                    <span class="bg-brand-navy px-2.5 py-1 rounded border border-brand-steel/30 text-slate-300">Lerma</span>
                 </div>
             </div>
         </div>
@@ -488,7 +507,7 @@
         </div>
     </footer>
 
-    <!-- BOTÓN FLOTANTE BARRA INFERIOR DE COTIZACIÓN RÁPIDA -->
+    <!-- BOTÓN FLOTANTE INFERIOR -->
     <div id="sticky-quote-bar" class="fixed bottom-0 left-0 right-0 bg-brand-navy text-white p-4 shadow-2xl border-t border-brand-steel/40 z-30 transform translate-y-full transition-transform duration-300 flex justify-between items-center max-w-7xl mx-auto rounded-t-2xl">
         <div class="flex items-center gap-3">
             <div class="bg-brand-lightsteel text-brand-navy w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm" id="bar-item-count">0</div>
@@ -503,39 +522,255 @@
         </a>
     </div>
 
-    <!-- LOGICA EN JAVASCRIPT -->
+    <!-- SCRIPT DEL CATÁLOGO COMPLETO MAPEADO Y SISTEMA DE PAGINACIÓN -->
     <script>
-        // Listado Oficial de Productos de Materiales Pérez
         const products = [
-            { id: 'cemento-gris', name: 'Cemento Gris Tolteca / CPC 30R', category: 'obra-gris', unit: 'Bulto 50kg', icon: 'package' },
-            { id: 'mortero', name: 'Mortero para Plantillas y Aplanados', category: 'obra-gris', unit: 'Bulto 50kg', icon: 'package' },
-            { id: 'varilla-38', name: 'Varilla Corrugada 3/8" (Número 3)', category: 'acero', unit: 'Pieza 12m', icon: 'layers' },
-            { id: 'varilla-12', name: 'Varilla Corrugada 1/2" (Número 4)', category: 'acero', unit: 'Pieza 12m', icon: 'layers' },
-            { id: 'armex', name: 'Armex / Castillo Electrosoldado 15x15-4', category: 'acero', unit: 'Tramo 6m', icon: 'grid' },
-            { id: 'malla-electrosoldada', name: 'Malla Electrosoldada 6x6-10/10', category: 'acero', unit: 'M2 / Rollo', icon: 'grid' },
-            { id: 'arena-azul', name: 'Arena de Mina / Arena Azul', category: 'obra-gris', unit: 'M3 / Camión', icon: 'truck' },
-            { id: 'grava-34', name: 'Grava Triturada 3/4"', category: 'obra-gris', unit: 'M3 / Camión', icon: 'truck' },
-            { id: 'tabique-rojo', name: 'Tabique Rojo Recocido', category: 'obra-gris', unit: 'Millar / Ciento', icon: 'box' },
-            { id: 'block-pesado', name: 'Block de Concreto 12x20x40', category: 'obra-gris', unit: 'Pieza', icon: 'box' },
-            { id: 'tuberia-pvc-4', name: 'Tubería PVC Sanitario 4" (100mm)', category: 'plomeria', unit: 'Tramo 6m', icon: 'pipette' },
-            { id: 'tinaco-1100', name: 'Tinaco Rotoplas 1100 Litros', category: 'plomeria', unit: 'Pieza', icon: 'database' },
-            { id: 'poliducto-12', name: 'Poliducto Naranja Eléctrico 1/2"', category: 'ferreteria', unit: 'Metro / Rollo', icon: 'disc' },
-            { id: 'aditivo-impermeabilizante', name: 'Aditivo para Concreto Festral / Sika', category: 'ferreteria', unit: 'Cubeta 19L', icon: 'droplet' },
-            { id: 'alambre-recocido', name: 'Alambre Recocido Calibre 16', category: 'acero', unit: 'Kilogramo', icon: 'hash' },
-            { id: 'pala-truper', name: 'Pala Cuadrada / Manteadora Truper', category: 'ferreteria', unit: 'Pieza', icon: 'wrench' }
+            // BULTOS
+            { id: 'BT001', name: 'Cemento Cruz Azul 50 kg', category: 'Bultos', unit: 'Bulto / Tonelada (20 Bultos)' },
+            { id: 'BT002', name: 'Mortero Cruz Azul 50 kg', category: 'Bultos', unit: 'Bulto / Tonelada (20 Bultos)' },
+            { id: 'BT003', name: 'Cemento Blanco 25 kg', category: 'Bultos', unit: 'Bulto / Tonelada (40 Bultos)' },
+            { id: 'BT004', name: 'Cal 25 kg', category: 'Bultos', unit: 'Bulto / Tonelada (40 Bultos)' },
+            { id: 'BT005', name: 'Yeso 40 kg', category: 'Bultos', unit: 'Bulto / Tonelada (25 Bultos)' },
+            { id: 'BT006', name: 'Cero Fino 25 kg', category: 'Bultos', unit: 'Bulto / Tonelada (40 Bultos)' },
+            { id: 'BT007', name: 'Cero Grueso 25 kg', category: 'Bultos', unit: 'Bulto / Tonelada (40 Bultos)' },
+            { id: 'BT008', name: 'Estuco Adheteck 25 kg', category: 'Bultos', unit: 'Bulto / Tonelada (40 Bultos)' },
+            { id: 'BT009', name: 'Estuco Sika 20 kg', category: 'Bultos', unit: 'Bulto / Tonelada (50 Bultos)' },
+            { id: 'BT010', name: 'Pegazulejo Fortec 20 kg', category: 'Bultos', unit: 'Bulto / Tonelada (50 Bultos)' },
+            { id: 'BT011', name: 'Pegazulejo Crest 20 kg', category: 'Bultos', unit: 'Bulto / Tonelada (50 Bultos)' },
+            { id: 'BT012', name: 'Pegazulejo Cruz Azul Basic Gris 20 kg', category: 'Bultos', unit: 'Bulto / Tonelada (50 Bultos)' },
+            { id: 'BT013', name: 'Cemento Cruz Azul 25 kg', category: 'Bultos', unit: 'Bulto / Tonelada (40 Bultos)' },
+            { id: 'BT014', name: 'Mortero Cruz Azul 25 kg', category: 'Bultos', unit: 'Bulto / Tonelada (40 Bultos)' },
+
+            // ACEROS
+            { id: 'AC001', name: 'Alambre Recocido', category: 'Aceros', unit: 'Kg' },
+            { id: 'AC002', name: 'Alambrón 1/4"', category: 'Aceros', unit: 'Kg' },
+            { id: 'AC003', name: 'Estribo Alambrón Estándar', category: 'Aceros', unit: 'Kg' },
+            { id: 'AC004', name: 'Varilla 3/8"', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC005', name: 'Varilla 1/2"', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC006', name: 'Varilla 5/8"', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC007', name: 'Varilla 3/4"', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC008', name: 'Varilla 1"', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC009', name: 'Armex 6 M (0.08 x 0.08)', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC010', name: 'Armex 6 M (0.10 x 0.10)', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC011', name: 'Armex 6 M (0.10 x 0.15)', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC012', name: 'Armex 6 M (0.10 x 0.20)', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC013', name: 'Armex 6 M (0.10 x 0.25)', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC014', name: 'Malla Electrosoldada 66 1010', category: 'Aceros', unit: 'Rollo 100m² / m²' },
+            { id: 'AC015', name: 'Malla Electrosoldada 66 66', category: 'Aceros', unit: 'Rollo 100m²' },
+            { id: 'AC016', name: 'Malla Plafón', category: 'Aceros', unit: 'Rollo 20m²' },
+            { id: 'AC017', name: 'Clavo Estándar 1"', category: 'Aceros', unit: 'Kg / Caja 25 kg' },
+            { id: 'AC018', name: 'Clavo Estándar 1 1/2"', category: 'Aceros', unit: 'Kg / Caja 25 kg' },
+            { id: 'AC019', name: 'Clavo Estándar 2"', category: 'Aceros', unit: 'Kg / Caja 25 kg' },
+            { id: 'AC020', name: 'Clavo Estándar 2 1/2"', category: 'Aceros', unit: 'Kg / Caja 25 kg' },
+            { id: 'AC021', name: 'Clavo Estándar 3"', category: 'Aceros', unit: 'Kg / Caja 25 kg' },
+            { id: 'AC022', name: 'Clavo Estándar 4"', category: 'Aceros', unit: 'Kg / Caja 25 kg' },
+            { id: 'AC023', name: 'Clavo Estándar 5"', category: 'Aceros', unit: 'Kg / Caja 25 kg' },
+            { id: 'AC024', name: 'Clavo p/ Concreto 2"', category: 'Aceros', unit: 'Kg / Caja 25kg / 20kg' },
+            { id: 'AC025', name: 'Clavo p/ Concreto 2 1/2"', category: 'Aceros', unit: 'Kg / Caja 25kg / 20kg' },
+            { id: 'AC026', name: 'Clavo p/ Concreto 3"', category: 'Aceros', unit: 'Kg / Caja 25kg / 20kg' },
+            { id: 'AC027', name: 'Registro p/ Colar 40x60', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC028', name: 'Registro p/ Colar con Coladera 40x60', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC029', name: 'Registro Colado 40x60', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC030', name: 'Tapa para Cisterna Lámina (0.40 x 0.60)', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC031', name: 'Tapa para Cisterna Lámina (0.50 x 0.50)', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC032', name: 'Tapa para Cisterna Lámina (0.60 x 0.60)', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC033', name: 'Tapa para Cisterna Placa (0.60 x 0.60)', category: 'Aceros', unit: 'Pieza' },
+            { id: 'AC034', name: 'Estribo Alambrón Especial', category: 'Aceros', unit: 'Kg' },
+
+            // AGREGADOS
+            { id: 'AG001', name: 'Arena Viaje', category: 'Agregados', unit: 'Viaje 6m³ / m³' },
+            { id: 'AG002', name: 'Arena Bulto', category: 'Agregados', unit: 'Bulto' },
+            { id: 'AG003', name: 'Grava Viaje', category: 'Agregados', unit: 'Viaje 6m³ / m³' },
+            { id: 'AG004', name: 'Grava Bulto', category: 'Agregados', unit: 'Bulto' },
+            { id: 'AG005', name: 'Tepojal Viaje', category: 'Agregados', unit: 'Viaje 6m³ / m³' },
+            { id: 'AG006', name: 'Tepojal Bulto', category: 'Agregados', unit: 'Bulto' },
+            { id: 'AG007', name: 'Arena Azul Viaje', category: 'Agregados', unit: 'Viaje 6m³ / m³' },
+            { id: 'AG008', name: 'Grava Triturada Viaje', category: 'Agregados', unit: 'Viaje 6m³ / m³' },
+            { id: 'AG009', name: 'Tabique Rojo (5 x 12 x 22)', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG010', name: 'Tabicón (9 x 12 x 27)', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG011', name: 'Block Macizo (12 x 19 x 38)', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG012', name: 'Block Multiperforado (12 x 19 x 38)', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG013', name: 'Block Ligero Económico (12 x 19 x 38)', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG014', name: 'Block Estriado (12 x 19 x 38)', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG015', name: 'Lavadero Cemento Estándar Con Pileta', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG016', name: 'Lavadero Cemento Estándar Sin Pileta', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG017', name: 'Lavadero Grano Estándar Con Pileta', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG018', name: 'Lavadero Grano Estándar Sin Pileta', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG019', name: 'Lavadero Grano Condominio Con Pileta', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG020', name: 'Lavadero Grano Cobijero Con Pileta', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG021', name: 'Lavadero Grano Cobijero Sin Pileta', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG022', name: 'Moldura Unicel 1.22 M1', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG023', name: 'Moldura Unicel 1.22 M2', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG024', name: 'Moldura Unicel 1.22 M3', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG025', name: 'Moldura Unicel 1.22 M4', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG026', name: 'Moldura Unicel 1.22 M5', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG027', name: 'Moldura Unicel 1.22 M6', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG028', name: 'Moldura Unicel 1.22 M7', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG029', name: 'Moldura Unicel 1.22 M8', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG030', name: 'Chaflán', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG031', name: 'Tubo Concreto (0.15 x 0.90)', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG032', name: 'Tubo Concreto (0.20 x 0.90)', category: 'Agregados', unit: 'Pieza' },
+            { id: 'AG033', name: 'Tubo Concreto (0.30 x 0.90)', category: 'Agregados', unit: 'Pieza' },
+
+            // POLIDUCTOS Y MANGUERAS
+            { id: 'PM001', name: 'Poliducto Naranja 100m 1/2"', category: 'Poliductos y Mangueras', unit: 'Metro / Rollo 100m' },
+            { id: 'PM002', name: 'Poliducto Naranja 100m 3/4"', category: 'Poliductos y Mangueras', unit: 'Metro / Rollo 100m' },
+            { id: 'PM003', name: 'Poliducto Negro 100m 1/2"', category: 'Poliductos y Mangueras', unit: 'Rollo 100m' },
+            { id: 'PM004', name: 'Poliducto Flexible Sin Guía 100m 1/2"', category: 'Poliductos y Mangueras', unit: 'Metro / Rollo 100m' },
+            { id: 'PM005', name: 'Poliducto Flexible Sin Guía 50m 3/4"', category: 'Poliductos y Mangueras', unit: 'Metro / Rollo 50m' },
+            { id: 'PM006', name: 'Poliducto Flexible Con Guía 100m 1/2"', category: 'Poliductos y Mangueras', unit: 'Rollo 100m' },
+            { id: 'PM007', name: 'Poliducto Flexible Con Guía 100m 3/4"', category: 'Poliductos y Mangueras', unit: 'Rollo 100m' },
+            { id: 'PM008', name: 'Poliducto Flexible Con Guía 50m 3/4"', category: 'Poliductos y Mangueras', unit: 'Rollo 50m' },
+            { id: 'PM009', name: 'Codo Poliducto 1/2"', category: 'Poliductos y Mangueras', unit: 'Pieza' },
+
+            // TUBOS DE CARTÓN Y TINACOS
+            { id: 'TC001', name: 'Tubo de Cartón 3 M (0.10 m)', category: 'Tubos de Carton y Tinacos', unit: 'Pieza' },
+            { id: 'TC002', name: 'Tubo de Cartón 3 M (0.15 m)', category: 'Tubos de Carton y Tinacos', unit: 'Pieza' },
+            { id: 'TC003', name: 'Tubo de Cartón 3 M (0.20 m)', category: 'Tubos de Carton y Tinacos', unit: 'Pieza' },
+            { id: 'TC004', name: 'Tubo de Cartón 3 M (0.25 m)', category: 'Tubos de Carton y Tinacos', unit: 'Pieza' },
+            { id: 'TC005', name: 'Tubo de Cartón 3 M (0.30 m)', category: 'Tubos de Carton y Tinacos', unit: 'Pieza' },
+            { id: 'TC006', name: 'Tubo de Cartón 3 M (0.35 m)', category: 'Tubos de Carton y Tinacos', unit: 'Pieza' },
+            { id: 'TC007', name: 'Tubo de Cartón 3 M (0.40 m)', category: 'Tubos de Carton y Tinacos', unit: 'Pieza' },
+            { id: 'TC008', name: 'Tubo de Cartón 3 M (0.50 m)', category: 'Tubos de Carton y Tinacos', unit: 'Pieza' },
+            { id: 'TC009', name: 'Tubo de Cartón 3 M (0.60 m)', category: 'Tubos de Carton y Tinacos', unit: 'Pieza' },
+            { id: 'TC010', name: 'Tinaco Rotoplas 1100 L', category: 'Tubos de Carton y Tinacos', unit: 'Pieza' },
+            { id: 'TC011', name: 'Tinaco Tritón 1150 L', category: 'Tubos de Carton y Tinacos', unit: 'Pieza' },
+
+            // ADITIVOS
+            { id: 'AD001', name: 'Ligakretop 1 L', category: 'Aditivos', unit: 'Pieza' },
+            { id: 'AD002', name: 'Ligakretop 4 L', category: 'Aditivos', unit: 'Pieza' },
+            { id: 'AD003', name: 'Resanacreto 1 kg', category: 'Aditivos', unit: 'Pieza' },
+            { id: 'AD004', name: 'Resina 1 L', category: 'Aditivos', unit: 'Pieza' },
+            { id: 'AD005', name: 'Resina 19 L', category: 'Aditivos', unit: 'Pieza' },
+            { id: 'AD006', name: 'Resina 4 L', category: 'Aditivos', unit: 'Pieza' },
+            { id: 'AD007', name: 'Unitirol 1 L', category: 'Aditivos', unit: 'Pieza' },
+            { id: 'AD008', name: 'Unitirol 4 L', category: 'Aditivos', unit: 'Pieza' },
+            { id: 'AD009', name: 'Uniyeso 1 L', category: 'Aditivos', unit: 'Pieza' },
+            { id: 'AD010', name: 'Uniyeso 4 L', category: 'Aditivos', unit: 'Pieza' },
+
+            // FERRETERÍA
+            { id: 'FE001', name: 'Amarrador', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE002', name: 'Arco Económico', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE003', name: 'Arco Pretul', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE004', name: 'Barreta', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE005', name: 'Bicolor', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE006', name: 'Bote Integral 8 cm', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE007', name: 'Bote Integral Mini 8 cm', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE008', name: 'Brocha 1"', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE009', name: 'Brocha 1 1/2"', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE010', name: 'Brocha 2"', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE011', name: 'Brocha 2 1/2"', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE012', name: 'Brocha 3"', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE013', name: 'Brocha 4"', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE014', name: 'Brocha 6"', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE015', name: 'Caja para Luz 1/2"', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE016', name: 'Caja para Luz 3/4"', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE017', name: 'Carretilla Cuervo', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE018', name: 'Carretilla Truper', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE019', name: 'Cepillo Alambre', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE020', name: 'Chalupa', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE021', name: 'Cincel Económico', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE022', name: 'Cincel Truper 3/4 x 12"', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE023', name: 'Cincel Truper 3/4 x 8"', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE024', name: 'Cinta Aislar', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE025', name: 'Cinta Teflón', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE026', name: 'Coladera F. Colado (0.15 x 0.15)', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE027', name: 'Coladera F. Colado (0.20 x 0.20)', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE028', name: 'Color Rojo', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE029', name: 'Cuchara Pretul N°9', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE030', name: 'Disco Concreto 4 1/2"', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE031', name: 'Disco Corte Metal 4 1/2"', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE032', name: 'Escoba Abanico', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE033', name: 'Escoba Cepillo', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE034', name: 'Espátula Truper', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE035', name: 'Flexómetro 3 m', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE036', name: 'Flexómetro 5 m', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE037', name: 'Flota Esponja Roja', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE038', name: 'Flota Espuma Negra', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE039', name: 'Grifa', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE040', name: 'Hilo 65 m', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE041', name: 'Hilo 165 m', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE042', name: 'Llana', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE043', name: 'Llanta para Carretilla', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE044', name: 'Maceta 4 LB', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE045', name: 'Martillo Uña Pretul', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE046', name: 'Pala Cuadrada Pretul', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE047', name: 'Pala Cuadrada Cuervo', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE048', name: 'Pala Cuadrada Truper', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE049', name: 'Panel (1.22 x 2.44) 2" Grosor', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE050', name: 'Panel (1.22 x 2.44) 3" Grosor', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE051', name: 'Rafia Rollo 230 M (1/2 kg)', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE052', name: 'Rodillo', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE053', name: 'Segueta Diente Fino', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE054', name: 'Segueta Diente Grueso', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE055', name: 'Volteador', category: 'Ferretería', unit: 'Pieza' },
+            { id: 'FE056', name: 'Zapapico Completo', category: 'Ferretería', unit: 'Pieza' },
+
+            // TUBERÍA Y CONEXIONES PVC
+            { id: 'CT001', name: 'Tubo PVC 6 M (1 1/2")', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT002', name: 'Tubo PVC 6 M (2")', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT003', name: 'Tubo PVC 6 M (3")', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT004', name: 'Tubo PVC 6 M (4")', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT005', name: 'Tubo PVC 6 M (6")', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT006', name: 'Céspol Bote Salida 21', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT007', name: 'Céspol Bote Salida 22', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT008', name: 'Codo PVC 1 1/2" x 45°', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT009', name: 'Codo PVC 1 1/2" x 90°', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT010', name: 'Codo PVC 2" x 45°', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT011', name: 'Codo PVC 2" x 90°', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT012', name: 'Codo PVC 3" x 45°', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT013', name: 'Codo PVC 3" x 90°', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT014', name: 'Codo PVC 4" x 45°', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT015', name: 'Codo PVC 4" x 90°', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT016', name: 'Codo PVC 6" x 45°', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT017', name: 'Codo PVC 6" x 90°', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT018', name: 'Codo PVC 4" x 90° Salida 21', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT019', name: 'Codo PVC 4" x 90° Salida 22', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT020', name: 'Coladera PVC 4"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT021', name: 'Cople PVC 1 1/2"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT022', name: 'Cople PVC 2"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT023', name: 'Cople PVC 3"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT024', name: 'Cople PVC 4"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT025', name: 'Cople PVC 6"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT026', name: 'Pegamento PVC 1/4 L', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT027', name: 'Pegamento PVC 1/8 L', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT028', name: 'Pegamento PVC 0.050 L', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT029', name: 'Reducción PVC 2" a 1 1/2"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT030', name: 'Reducción PVC 3" a 2"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT031', name: 'Reducción PVC 4" a 2"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT032', name: 'Reducción PVC 4" a 3"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT033', name: 'Reducción PVC 6" a 4"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT034', name: 'Tapa PVC 1 1/2"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT035', name: 'Tapa PVC 2"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT036', name: 'Tapa PVC 3"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT037', name: 'Tapa PVC 4"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT038', name: 'Tapa PVC 6"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT039', name: 'Tee PVC 1 1/2"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT040', name: 'Tee PVC 2"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT041', name: 'Tee PVC 3"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT042', name: 'Tee PVC 4"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT043', name: 'Tee PVC 6"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT044', name: 'Tee PVC Reducida 4" a 2"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT045', name: 'Yee PVC 1 1/2"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT046', name: 'Yee PVC 2"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT047', name: 'Yee PVC 3"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT048', name: 'Yee PVC 4"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' },
+            { id: 'CT049', name: 'Yee PVC 6"', category: 'Tubería y Conexiones PVC', unit: 'Pieza' }
         ];
 
-        // Estado Global de la Cotización
+        // Estado Global de Cotización y Paginación
         let quoteState = {};
+        let currentPage = 1;
+        let itemsPerPage = 12;
+        let currentCategory = 'todos';
+        let currentSearchQuery = '';
 
-        // Inicialización
         document.addEventListener('DOMContentLoaded', () => {
-            renderProducts(products);
+            renderCatalog();
             renderQuoteSummary();
             lucide.createIcons();
         });
 
-        // Muestra notificación sin alert
         function showToast(message) {
             const toast = document.getElementById('toast');
             const toastMsg = document.getElementById('toast-message');
@@ -546,81 +781,176 @@
             }, 2500);
         }
 
-        // Renders de los Productos en el Grid
-        function renderProducts(items) {
+        function getFilteredProducts() {
+            return products.filter(p => {
+                const matchesCategory = (currentCategory === 'todos' || p.category === currentCategory);
+                const matchesSearch = p.name.toLowerCase().includes(currentSearchQuery) || p.id.toLowerCase().includes(currentSearchQuery);
+                return matchesCategory && matchesSearch;
+            });
+        }
+
+        function renderCatalog() {
+            const filteredList = getFilteredProducts();
+            const totalItems = filteredList.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage) || 1;
+
+            if (currentPage > totalPages) currentPage = totalPages;
+            if (currentPage < 1) currentPage = 1;
+
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = Math.min(startIndex + parseInt(itemsPerPage), totalItems);
+            const pageProducts = filteredList.slice(startIndex, endIndex);
+
+            // Actualizar contadores
+            const counterEl = document.getElementById('catalog-counter');
+            const pageInfoEl = document.getElementById('catalog-page-info');
+
+            if (totalItems === 0) {
+                counterEl.innerText = '0 productos encontrados';
+                pageInfoEl.innerText = 'Página 0 de 0';
+            } else {
+                counterEl.innerText = `Mostrando ${startIndex + 1} - ${endIndex} de ${totalItems} productos`;
+                pageInfoEl.innerText = `Página ${currentPage} de ${totalPages}`;
+            }
+
+            // Renderizar Grid
             const grid = document.getElementById('products-grid');
             grid.innerHTML = '';
 
-            if(items.length === 0) {
+            if (pageProducts.length === 0) {
                 grid.innerHTML = `
-                    <div class="col-span-full py-12 text-center text-slate-500">
-                        <i data-lucide="package-search" class="w-12 h-12 mx-auto mb-2 text-slate-300"></i>
-                        <p>No se encontraron materiales con ese criterio.</p>
+                    <div class="col-span-full py-16 text-center text-slate-500 bg-white rounded-xl border border-slate-200">
+                        <i data-lucide="package-search" class="w-12 h-12 mx-auto mb-3 text-slate-300"></i>
+                        <p class="font-bold text-slate-700">No se encontraron productos en esta categoría o búsqueda.</p>
+                        <p class="text-xs text-slate-400 mt-1">Prueba seleccionando otra línea o borrando el buscador.</p>
                     </div>
                 `;
-                lucide.createIcons();
-                return;
+            } else {
+                pageProducts.forEach(prod => {
+                    const qty = quoteState[prod.id] || 0;
+                    const card = document.createElement('div');
+                    card.className = "bg-white rounded-xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between";
+                    
+                    card.innerHTML = `
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-[11px] font-extrabold text-brand-navy bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200 tracking-wide">${prod.id}</span>
+                                <span class="text-[10px] uppercase font-bold text-brand-steel bg-slate-50 px-2 py-0.5 rounded border border-slate-100">${prod.category}</span>
+                            </div>
+                            <h4 class="font-bold text-slate-900 text-sm mb-1 leading-snug">${prod.name}</h4>
+                            <p class="text-xs text-slate-500 mt-1 flex items-center gap-1 font-medium">
+                                <span class="text-brand-steel font-semibold">Unidad:</span> ${prod.unit}
+                            </p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-slate-100">
+                            ${qty === 0 ? `
+                                <button onclick="updateQty('${prod.id}', 1)" class="w-full bg-brand-navy hover:bg-brand-dark text-white text-xs font-bold py-2.5 px-4 rounded-lg transition flex items-center justify-center gap-2">
+                                    <i data-lucide="plus" class="w-4 h-4"></i> Agregar a Cotización
+                                </button>
+                            ` : `
+                                <div class="flex items-center justify-between bg-slate-100 p-1.5 rounded-lg border border-slate-200">
+                                    <button onclick="updateQty('${prod.id}',${qty - 1})" class="w-8 h-8 bg-white text-slate-800 rounded-md shadow-sm font-bold flex items-center justify-center hover:bg-slate-200 transition">-</button>
+                                    <span class="font-black text-sm text-brand-navy px-3">${qty} <span class="text-[10px] font-normal text-slate-500">cant.</span></span>
+                                    <button onclick="updateQty('${prod.id}',${qty + 1})" class="w-8 h-8 bg-brand-navy text-white rounded-md shadow-sm font-bold flex items-center justify-center hover:bg-brand-dark transition">+</button>
+                                </div>
+                            `}
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
             }
 
-            items.forEach(prod => {
-                const qty = quoteState[prod.id] || 0;
-                const card = document.createElement('div');
-                card.className = "bg-white rounded-xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between";
-                
-                card.innerHTML = `
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <div class="p-2.5 bg-brand-navy/5 text-brand-navy rounded-lg">
-                                <i data-lucide="${prod.icon}" class="w-5 h-5"></i>
-                            </div>
-                            <span class="text-[10px] uppercase tracking-wider font-bold text-brand-steel bg-slate-100 px-2 py-1 rounded-md">${prod.unit}</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900 text-base mb-1">${prod.name}</h4>
-                    </div>
-
-                    <div class="mt-4 pt-4 border-t border-slate-100">
-                        ${qty === 0 ? `
-                            <button onclick="updateQty('${prod.id}', 1)" class="w-full bg-brand-navy hover:bg-brand-dark text-white text-xs font-bold py-2.5 px-4 rounded-lg transition flex items-center justify-center gap-2">
-                                <i data-lucide="plus" class="w-4 h-4"></i> Agregar a Cotización
-                            </button>
-                        ` : `
-                            <div class="flex items-center justify-between bg-slate-100 p-1.5 rounded-lg border border-slate-200">
-                                <button onclick="updateQty('${prod.id}',${qty - 1})" class="w-8 h-8 bg-white text-slate-800 rounded-md shadow-sm font-bold flex items-center justify-center hover:bg-slate-200 transition">-</button>
-                                <span class="font-black text-sm text-brand-navy px-3">${qty} <span class="text-[10px] font-normal text-slate-500">cant.</span></span>
-                                <button onclick="updateQty('${prod.id}',${qty + 1})" class="w-8 h-8 bg-brand-navy text-white rounded-md shadow-sm font-bold flex items-center justify-center hover:bg-brand-dark transition">+</button>
-                            </div>
-                        `}
-                    </div>
-                `;
-                grid.appendChild(card);
-            });
-
+            renderPaginationControls(totalPages);
             lucide.createIcons();
         }
 
-        // Actualizar Cantidad
+        function renderPaginationControls(totalPages) {
+            const paginationContainer = document.getElementById('pagination-controls');
+            paginationContainer.innerHTML = '';
+
+            if (totalPages <= 1) return;
+
+            // Botón Anterior
+            const prevBtn = document.createElement('button');
+            prevBtn.className = `px-3 py-2 rounded-lg text-xs font-bold transition flex items-center gap-1 ${currentPage === 1 ? 'bg-slate-100 text-slate-400 cursor-not-allowed' : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'}`;
+            prevBtn.innerHTML = `<i data-lucide="chevron-left" class="w-4 h-4"></i> Anterior`;
+            prevBtn.disabled = (currentPage === 1);
+            prevBtn.onclick = () => changePage(currentPage - 1);
+            paginationContainer.appendChild(prevBtn);
+
+            // Páginas numéricas
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === 1 || i === totalPages || (i >= currentPage - 1 && i <= currentPage + 1)) {
+                    const pageBtn = document.createElement('button');
+                    pageBtn.className = `w-9 h-9 rounded-lg text-xs font-bold transition ${i === currentPage ? 'bg-brand-navy text-white shadow-md' : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'}`;
+                    pageBtn.innerText = i;
+                    pageBtn.onclick = () => changePage(i);
+                    paginationContainer.appendChild(pageBtn);
+                } else if (i === currentPage - 2 || i === currentPage + 2) {
+                    const dots = document.createElement('span');
+                    dots.className = "text-slate-400 px-1 text-xs font-bold";
+                    dots.innerText = "...";
+                    paginationContainer.appendChild(dots);
+                }
+            }
+
+            // Botón Siguiente
+            const nextBtn = document.createElement('button');
+            nextBtn.className = `px-3 py-2 rounded-lg text-xs font-bold transition flex items-center gap-1 ${currentPage === totalPages ? 'bg-slate-100 text-slate-400 cursor-not-allowed' : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'}`;
+            nextBtn.innerHTML = `Siguiente <i data-lucide="chevron-right" class="w-4 h-4"></i>`;
+            nextBtn.disabled = (currentPage === totalPages);
+            nextBtn.onclick = () => changePage(currentPage + 1);
+            paginationContainer.appendChild(nextBtn);
+        }
+
+        function changePage(page) {
+            currentPage = page;
+            renderCatalog();
+            document.getElementById('catalogo').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function changeItemsPerPage(val) {
+            itemsPerPage = parseInt(val);
+            currentPage = 1;
+            renderCatalog();
+        }
+
+        function filterCategory(cat) {
+            currentCategory = cat;
+            currentPage = 1;
+
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-navy', 'text-white', 'active', 'border-brand-navy');
+                btn.classList.add('bg-white', 'text-slate-700');
+            });
+
+            event.currentTarget.classList.add('bg-brand-navy', 'text-white', 'active', 'border-brand-navy');
+            event.currentTarget.classList.remove('bg-white', 'text-slate-700');
+
+            renderCatalog();
+        }
+
+        function searchProducts() {
+            currentSearchQuery = document.getElementById('search-input').value.toLowerCase().trim();
+            currentPage = 1;
+            renderCatalog();
+        }
+
         function updateQty(id, newQty) {
             const product = products.find(p => p.id === id);
             if (newQty <= 0) {
                 delete quoteState[id];
-                showToast(`Se retiró "${product.name}" de tu lista`);
+                showToast(`Se retiró "${product.name}"`);
             } else {
                 quoteState[id] = newQty;
                 showToast(`Actualizado: ${newQty}x ${product.name}`);
             }
             
-            // Re-renderizar productos y resumen
-            const currentFilter = document.querySelector('.cat-btn.active').getAttribute('onclick').match(/'([^']+)'/)[1];
-            if(currentFilter === 'todos') {
-                renderProducts(products);
-            } else {
-                filterCategory(currentFilter);
-            }
-            
+            renderCatalog();
             renderQuoteSummary();
         }
 
-        // Render del Resumen de Cotización
         function renderQuoteSummary() {
             const container = document.getElementById('quote-items-container');
             const stickyBar = document.getElementById('sticky-quote-bar');
@@ -629,7 +959,6 @@
             const selectedIds = Object.keys(quoteState);
             const totalItems = selectedIds.reduce((sum, id) => sum + quoteState[id], 0);
 
-            // Actualizar Sticky Bar
             itemCountEl.innerText = totalItems;
             if (totalItems > 0) {
                 stickyBar.classList.remove('translate-y-full');
@@ -660,7 +989,7 @@
                     <div class="flex items-center gap-3">
                         <span class="font-black text-brand-navy bg-white px-2.5 py-1 rounded-md border border-slate-200 text-xs">${qty}x</span>
                         <div>
-                            <p class="font-bold text-slate-800">${prod.name}</p>
+                            <p class="font-bold text-slate-800">[${prod.id}] ${prod.name}</p>
                             <p class="text-[10px] text-slate-500">${prod.unit}</p>
                         </div>
                     </div>
@@ -675,43 +1004,17 @@
             lucide.createIcons();
         }
 
-        // Vaciar Cotización
         function clearQuote() {
             quoteState = {};
-            renderProducts(products);
+            renderCatalog();
             renderQuoteSummary();
             showToast("Lista de cotización vaciada");
         }
 
-        // Filtrar Categorías
-        function filterCategory(cat) {
-            document.querySelectorAll('.cat-btn').forEach(btn => {
-                btn.classList.remove('bg-brand-navy', 'text-white', 'active');
-                btn.classList.add('bg-white', 'text-slate-700');
-            });
-            event.currentTarget.classList.add('bg-brand-navy', 'text-white', 'active');
-            event.currentTarget.classList.remove('bg-white', 'text-slate-700');
-
-            if (cat === 'todos') {
-                renderProducts(products);
-            } else {
-                const filtered = products.filter(p => p.category === cat);
-                renderProducts(filtered);
-            }
-        }
-
-        // Búsqueda Dinámica
-        function searchProducts() {
-            const query = document.getElementById('search-input').value.toLowerCase();
-            const filtered = products.filter(p => p.name.toLowerCase().includes(query));
-            renderProducts(filtered);
-        }
-
-        // Enviar Cotización por WhatsApp con formato optimizado
         function sendWhatsAppQuote() {
             const selectedIds = Object.keys(quoteState);
             if (selectedIds.length === 0) {
-                showToast("Por favor agrega al menos un producto a tu lista primero");
+                showToast("Agrega al menos un producto a tu lista primero");
                 return;
             }
 
@@ -727,14 +1030,13 @@
 
             selectedIds.forEach((id, idx) => {
                 const prod = products.find(p => p.id === id);
-                message += `${idx + 1}. *${prod.name}* -> Cantidad: *${quoteState[id]}* (${prod.unit})\n`;
+                message += `${idx + 1}. [${prod.id}] *${prod.name}* -> Cantidad: *${quoteState[id]}* (${prod.unit})\n`;
             });
 
             message += `-----------------------------------\n`;
             message += `Favor de confirmar disponibilidad y costo total. ¡Gracias!`;
 
             const encodedMessage = encodeURIComponent(message);
-            // Número oficial de WhatsApp: +52 1 722 843 6063 (5217228436063)
             window.open(`https://wa.me/5217228436063?text=${encodedMessage}`, '_blank');
         }
     </script>
